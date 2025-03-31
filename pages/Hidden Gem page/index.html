@@ -5,79 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hidden Gems Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        h1 {
-            margin: 20px;
-        }
-        #map {
-            width: 90%;
-            height: 500px;
-            margin: 0 auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <div class="header">
+        <img src="./assets/img/logo.png" alt="Volcanion" class="logo">
+        <div class="choices">
+            <a href="../../index.html" class="choice">Home</a>
+            <a href="./pages/Hidden Gem page/index.html" class="choice">Hidden Gems</a>
+            <a href="https://example.com/choice3" class="choice">About Me.</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu(event)">&#9776;</div>
+    </div>
+    
+    <div class="menu" id="menu">
+        <a href="../../index.html">Home</a>
+        <a href="#service1">Send a Review</a>
+        <a href="../Stories/index.html">Stories</a>
+        <a href="#contact">Contact Us</a>
+    </div>
 
     <h1>Explore Hidden Gems Around the World</h1>
     <div id="map"></div>
 
+    <footer class="footer">
+        <div class="copyright">&copy;|MMXXV|Volcanion.</div>
+        <img class="footer-logo-img" src="./assets/img/logo.png" alt="Logo">
+        <div class="copyright">All Rights Reserved.</div>
+    </footer>
+
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
-    <script>
-        // Initialize the map
-        var map = L.map('map').setView([12, 122], 3.5); // Centered around the Philippines
-
-        // Add OpenStreetMap tiles
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap contributors'
-        }).addTo(map);
-
-        // Hidden Gems Data (Coordinates, Names, Descriptions, Images)
-        var hiddenGems = [
-            { 
-                name: "Jiufen, Taiwan", 
-                lat: 25.1075, 
-                lng: 121.8430, 
-                description: "A charming mountain village known for its lantern-lit streets and street food.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Jiufen%2C_Taiwan.jpg"
-            },
-            { 
-                name: "Chefchaouen, Morocco", 
-                lat: 35.1686, 
-                lng: -5.2632, 
-                description: "The blue pearl of Morocco, famous for its blue-painted streets and stunning mountain views.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/3/3b/Chefchaouen_morocco.jpg"
-            },
-            { 
-                name: "Hallstatt, Austria", 
-                lat: 47.5615, 
-                lng: 13.6493, 
-                description: "A picturesque lakeside village with stunning alpine scenery and historic charm.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Hallstatt_Austria.jpg"
-            },
-            { 
-                name: "Siquijor Island, Philippines", 
-                lat: 9.2006, 
-                lng: 123.5950, 
-                description: "A mystical island known for its white sand beaches, waterfalls, and folklore.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/7/7a/Siquijor_Island_Beach.jpg"
-            }
-        ];
-
-        // Add markers to the map
-        hiddenGems.forEach(function(gem) {
-            var marker = L.marker([gem.lat, gem.lng]).addTo(map);
-            marker.bindPopup(`<b>${gem.name}</b><br>${gem.description}<br><img src="${gem.image}" width="200">`);
-        });
-
-    </script>
-
+    <script src="./assets/js/scripts.js"></script>
 </body>
 </html>
