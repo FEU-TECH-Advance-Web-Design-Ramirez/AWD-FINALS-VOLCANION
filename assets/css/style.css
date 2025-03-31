@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+.header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo {
+    height: 70px;
+    padding: 5px;
+}
+.menu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 200px;
+    top: 60px;
+    right: 20px;
+    z-index: 1000;
+    border: 1px solid #ccc;
+}
+.menu a {
+    font-family: "Inknut Antiqua", serif;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.menu a:hover {
+    background-color: #ddd;
+}
+.hamburger {
+    
+    cursor: pointer;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    padding-right: 10px;
+
+}
+.choices {
+    font-family: "Inknut Antiqua", serif;
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+}
+.choice {
+    color: #6E6E6E;
+    text-decoration: none;
+}
+.choice:hover {
+    text-decoration: none;
+}
+.show {
+    display: block;
+}
+.cont_1 {
+    font-family: "Lato", sans-serif;
+    width: 100%;
+    background-color: #E3E0DB;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+.text-content {
+    flex: 1;
+    padding: 20px 40px 20px 80px;
+    color: #000;
+}
+.hidden{
+    color: #6E6E6E;
+}
+.text-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+.text-content p {
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+.world-container {
+    position: relative;
+    width: 600px;
+    height: 460px;
+    overflow: hidden;
+    z-index: 1;
+}
+.world-container img {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+.map {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+    z-index: 1;
+}
+.photo {
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    z-index: 2;
+    transition: 0.3s ease-in-out;
+}
+.photo1 { top: 40px; left: 80px; }
+.photo2 { top: 140px; left: 210px; }
+.photo3 { top: 260px; left: 350px; }
+.Featured-Container {
+    background-color: #E3E0DB;
+    padding: 20px;
+    border-radius: 10px;
+}
+.Featured-Container h1 {
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    padding: 50px;
+    margin: 0;
+    border-bottom: 3px solid #666;
+}
+.destination-container {
+    font-family: "Lato", sans-serif;
+    position: relative;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 400px;
+}
+.destination {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.destination.active {
+    opacity: 1;
+    transform: translateX(0);
+    position: relative;
+}
+.destination img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.destination-info {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.learn-more {
+    color: yellow;
+}
+.destination-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.destination-buttons button {
+    background: #424242;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background 0.3s ease;
+}
+.destination-buttons button:hover {
+    background: #252424;
+}
+.cont_2 {
+    font-family: "Lato", sans-serif;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #E3E0DB;
+}
+.cont-2 h1 {
+    font-size: 36px;
+    color: #000000;
+    padding: 50px;
+    border-bottom: 3px solid #666;
+}
+.main-group {
+    font-family: "Inknut Antiqua", serif;
+    display: flex;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.main-group:hover {
+    transform: scale(1.01);
+}
+.main-group img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+}
+.main-content {
+    padding: 15px;
+    flex: 1;
+}
+.main-content .description{
+    font-size: 18px;
+    color: #666;
+}
+.main-content .title {
+    font-size: 44px;
+    color: #333;
+}
+
+.container_2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.group {
+    font-family: "Inknut Antiqua", serif;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.group:hover {
+    transform: scale(1.05);
+}
+.group img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.content {
+    padding: 15px;
+}
+.title {
+    font-size: 1.2em;
+    margin: 0;
+    color: #333;
+}
+.description {
+    margin: 10px 0 0;
+    color: #666;
+}
+.footer {
+    font-family: "Inknut Antiqua", serif;
+    background: #ffffff;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.copyright {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px;
+}
+.footer-logo-img {
+    width: 80px;
+    height: auto;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volcanion.</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <div class="header">
+        <img src="./assets/img/logo.png" alt="Volcanion" class="logo">
+        <div class="choices">
+            <a href="./index.html" class="choice">Home</a>
+            <a href="./pages/Hidden Gem page/index.html" class="choice">Hidden Gems</a>
+            <a href="https://example.com/choice3" class="choice">About Me.</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu(event)">&#9776;</div>
+    </div>
+    
+    <div class="menu" id="menu">
+        <a href="./index.html">Home</a>
+        <a href="#service1">Send a Review</a>
+        <a href="./pages/Stories/index.html">Stories</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+
+    <div class="cont_1">
+        <div class="text-content">
+            <h1>Discover the</h1>
+            <h1 class="subheading"><span class="hidden">Hidden</span> Treasures</h1>
+            <p>Explore enchanting, lesser-known destinations around the globe. 
+            <br>From secret beaches to ancient ruins and local foods, <br>
+            uncover the beauty and flavors waiting just off the beaten path!</p>
+        </div>
+        
+        <div class="world-container">
+            <img src="./assets/img/map_vector.png" alt="World Map" class="map">
+            <img src="./assets/img/bora.avif" alt="Bora" class="photo photo1">
+            <img src="./assets/img/sushi.jpg" alt="Sushi" class="photo photo2">
+            <img src="./assets/img/thai.jpg" alt="Thailand" class="photo photo3">
+        </div>
+    </div>
+
+    <div class="Featured-Container">
+        <h1>Featured Destination</h1>   
+        <div class="destination-container">
+            <div class="destination active">
+                <img src="./assets/img/bora.avif" alt="Paris">
+                <a href="https://en.wikipedia.org/wiki/Paris" target="_blank" class="destination-info-link">
+                    <div class="destination-info">
+                        <h2>Paris, France</h2>
+                        <p>The city of love, known for its art, food, and the iconic Eiffel Tower.</p>
+                        <span class="learn-more">Learn More</span>
+                    </div>
+                </a>
+            </div>
+            <div class="destination">
+                <img src="./assets/img/sushi.jpg" alt="Tokyo">
+                <a href="https://en.wikipedia.org/wiki/Tokyo" target="_blank" class="destination-info-link">
+                    <div class="destination-info">
+                        <h2>Tokyo, Japan</h2>
+                        <p>A bustling metropolis blending tradition with futuristic innovation.</p>
+                        <span class="learn-more">Learn More</span>
+                    </div>
+                </a>
+            </div>
+            <div class="destination">
+                <img src="./assets/img/thai.jpg" alt="Rio de Janeiro">
+                <a href="https://en.wikipedia.org/wiki/Rio_de_Janeiro" target="_blank" class="destination-info-link">
+                    <div class="destination-info">
+                        <h2>Rio de Janeiro, Brazil</h2>
+                        <p>Famous for its Carnival, beaches, and the Christ the Redeemer statue.</p>
+                        <span class="learn-more">Learn More</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="destination-buttons">
+            <button onclick="prevDestination()">Previous</button>
+            <button onclick="nextDestination()">Next</button>
+        </div>
+    </div>
+
+    <div class="cont_2">
+        <div class="cont-2">
+            <h1>Latest Stories</h1>
+        </div>
+        <div class="main-group" onclick="window.location.href='./pages/Hidden Gem page/index.html'">
+            <img src="./assets/img/bora.avif" alt="Palawan">
+            <div class="main-content">
+                <h2 class="title">Palawan: The Ultimate Island Paradise Awaits!</h2>
+                <p class="description">Palawan, often dubbed the "last frontier" of the Philippines, is a breathtaking paradise known for its stunning landscapes and crystal-clear waters.</p>
+            </div>
+        </div>
+        <div class="container_2">
+            <div class="group" onclick="window.location.href='./pages/Hidden Gem page/index.html'">
+                <img src="./assets/img/sushi.jpg" alt="Sushi">
+                <div class="content">
+                    <h2 class="title">Cuisine: A Culinary Act of Flavor and Tradition</h2>
+                    <p class="description">Sushi is a celebrated Japanese dish that combines vinegared rice, seafood, vegetables, and sometimes tropical fruits.</p>
+                </div>
+            </div>
+            <div class="group" onclick="window.location.href='#'">
+                <img src="./assets/img/thai.jpg" alt="Barcelona">
+                <div class="content">
+                    <h2 class="title">Barcelona: A City of Art and Energy</h2>
+                    <p class="description">Renowned for its art and architecture, Barcelona is the capital of Catalonia, a vibrant city with a unique identity.</p>
+                </div>
+            </div>
+            <div class="group" onclick="window.location.href='#'">
+                <img src="./assets/img/sushi.jpg" alt="Vietnam">
+                <div class="content">
+                    <h2 class="title">Tradition: The Importance of Ancestor Worship</h2>
+                    <p class="description">Ancestor worship is a key aspect of Vietnamese culture, reflecting respect for lineage and family ties.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="copyright">&copy;|MMXXV|Volcanion.</div>
+        <img class="footer-logo-img" src="./assets/img/logo.png" alt="Logo">
+        <div class="copyright">All Rights Reserved.</div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

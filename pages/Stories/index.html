@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog Works</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            text-decoration: none; /* Remove underline from links */
+            color: inherit; /* Use inherited text color */
+            transition: transform 0.2s; /* Add hover effect */
+        }
+        .card:hover {
+            transform: scale(1.05); /* Scale up on hover */
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .card h3 {
+            margin: 10px 0;
+        }
+        .card p {
+            color: #666;
+        }
+        @media (max-width: 600px) {
+            .card {
+                width: 90%;
+            }
+        }
+        .stories-title {
+            font-family: 'Georgia', serif;
+            font-size: 28px;
+            text-align: center;
+            margin: 20px 0;
+            position: relative;
+            color: #2c3e50;
+        }
+        .stories-title::after {
+            content: '';
+            display: block;
+            width: 50%;
+            height: 4px;
+            background-color: #e74c3c;
+            margin: 10px auto 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Existing Header -->
+    <header>
+        <h1>Your Existing Header</h1>
+    </header>
+
+    <!-- Stories Title -->
+    <div class="stories-title">Stories</div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <a href="link1.html" class="card">
+            <img src="image1.jpg" alt="Work 1">
+            <h3>Work Title 1</h3>
+            <p>Description of work 1.</p>
+        </a>
+        <a href="link2.html" class="card">
+            <img src="image2.jpg" alt="Work 2">
+            <h3>Work Title 2</h3>
+            <p>Description of work 2.</p>
+        </a>
+        <a href="link3.html" class="card">
+            <img src="image3.jpg" alt="Work 3">
+            <h3>Work Title 3</h3>
+            <p>Description of work 3.</p>
+        </a>
+        <a href="link4.html" class="card">
+            <img src="image4.jpg" alt="Work 4">
+            <h3>Work Title 4</h3>
+            <p>Description of work 4.</p>
+        </a>
+        <a href="link5.html" class="card">
+            <img src="image5.jpg" alt="Work 5">
+            <h3>Work Title 5</h3>
+            <p>Description of work 5.</p>
+        </a>
+        <a href="link6.html" class="card">
+            <img src="image6.jpg" alt="Work 6">
+            <h3>Work Title 6</h3>
+            <p>Description of work 6.</p>
+        </a>
+        <a href="link7.html" class="card">
+            <img src="image7.jpg" alt="Work 7">
+            <h3>Work Title 7</h3>
+            <p>Description of work 7.</p>
+        </a>
+    </div>
+
+    <!-- Existing Footer -->
+    <footer>
+        <p>Your Existing Footer</p>
+    </footer>
+</body>
+</html>
