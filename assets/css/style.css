@@ -39,12 +39,10 @@ body {
     background-color: #ddd;
 }
 .hamburger {
-    
     cursor: pointer;
     font-size: 30px;
     color: rgb(0, 0, 0);
     padding-right: 10px;
-
 }
 .choices {
     font-family: "Inknut Antiqua", serif;
@@ -68,13 +66,15 @@ body {
     width: 100%;
     background-color: #E3E0DB;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 50px 0;
 }
 .text-content {
     flex: 1;
-    padding: 20px 40px 20px 80px;
+    padding: 20px;
     color: #000;
+    text-align: center;
 }
 .hidden{
     color: #6E6E6E;
@@ -92,10 +92,10 @@ body {
 }
 .world-container {
     position: relative;
-    width: 600px;
-    height: 460px;
-    overflow: hidden;
-    z-index: 1;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 20rem;
 }
 .world-container img {
     animation: float 3s ease-in-out infinite;
@@ -118,17 +118,17 @@ body {
 }
 .photo {
     position: absolute;
-    width: 150px;
-    height: 200px;
+    width: 100px;
+    height: auto;
     object-fit: cover;
     border-radius: 12px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
-    z-index: 2;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     transition: 0.3s ease-in-out;
+    z-index: 2;
 }
-.photo1 { top: 40px; left: 80px; }
-.photo2 { top: 140px; left: 210px; }
-.photo3 { top: 260px; left: 350px; }
+.photo1 { top: 20%; left: 10%; }
+.photo2 { top: 30%; left: 30%; }
+.photo3 { top: 50%; left: 50%; }
 .Featured-Container {
     background-color: #E3E0DB;
     padding: 20px;
@@ -204,7 +204,7 @@ body {
 }
 .cont_2 {
     font-family: "Lato", sans-serif;
-    max-width: auto;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
     background-color: #E3E0DB;
@@ -216,8 +216,8 @@ body {
     border-bottom: 3px solid #666;
 }
 .main-group {
-    font-family: "Inknut Antiqua", serif;
     display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
     background: white;
     border-radius: 8px;
@@ -230,30 +230,30 @@ body {
     transform: scale(1.01);
 }
 .main-group img {
-    width: 60%;
+    width: 100%;
     height: auto;
-    object-fit: cover;
 }
 .main-content {
     padding: 15px;
     flex: 1;
 }
 .main-content .description{
-    font-size: 18px;
+    font-size: 16px;
     color: #666;
 }
 .main-content .title {
-    font-size: 44px;
+    font-size: 24px;
     color: #333;
 }
 
 .container_2 {
-    display: flex;
-    justify-content: space-between;
+    display: flex; 
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -10px;
 }
+
 .group {
-    font-family: "Inknut Antiqua", serif;
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -268,9 +268,9 @@ body {
 }
 .group img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: auto;
 }
+
 .content {
     padding: 15px;
 }
@@ -282,6 +282,17 @@ body {
 .description {
     margin: 10px 0 0;
     color: #666;
+}
+@media (max-width: 768px) {
+    .group {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .group {
+        width: 100%;
+    }
 }
 .footer {
     font-family: "Inknut Antiqua", serif;
