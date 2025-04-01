@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philippines</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <img src="./assets/img/logo.png" alt="Volcanion" class="logo">
+        <div class="choices">
+            <a href="./index.html" class="choice">Home</a>
+            <a href="./pages/Hidden Gem page/index.html" class="choice">Hidden Gems</a>
+            <a href="https://example.com/choice3" class="choice">About Me.</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu(event)">&#9776;</div>
+    </div>
+
+    <div class="menu" id="menu">
+        <a href="./index.html">Home</a>
+        <a href="#service1">Send a Review</a>
+        <a href="./pages/Stories/index.html">Stories</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+
+    <div class="cont-1">
+        <h1>Experience Philippines: Food, Culture, and Must-Visit Places  </h1>
+    </div>
+
+    <div class="cuisine">
+        <div class="cuisine-title">Philippine Cuisine: A Blend of 
+
+            Heritage and Innovation</div>
+        <p class="cuisine-description">
+            The culinary landscape of the Philippines is a rich tapestry woven from centuries of diverse influences and homegrown traditions. From the beloved adobo, whose flavors vary from region to region, to the modern reinventions of classic dishes, Filipino cuisine remains a dynamic and evolving experience.            
+            <br><br>
+            At the heart of Filipino food culture is a strong emphasis on communal dining and bold, comforting flavors. Dishes like lechon, sinigang, and kare-kare highlight the country’s love for hearty, flavor-packed meals. Meanwhile, street food favorites such as isaw, kwek-kwek, and taho provide an authentic taste of everyday Filipino life.            
+            <br><br>
+            But Philippine cuisine isn’t just about preserving the past—it’s about reimagining it. Chefs across the country are elevating traditional flavors with modern techniques, creating dishes like ube-infused pastries, deconstructed halo-halo, and gourmet takes on local street food. With a growing presence on the global culinary stage, the Philippines continues to showcase its unique blend of heritage and innovation, captivating food lovers around the world.        
+        </p>
+        <img class="cuisine-image" src="./assets/img/pancit.png" />
+        <img class="cuisine-image" src="./assets/img/sinigang.png" />
+        <img class="cuisine-image" src="./assets/img/halohalo.png" />
+        <img class="cuisine-large-image" src="./assets/img/adobo.png" />
+    </div>
+
+    <div class="destination">
+        <div class="destination-title">The Philippines: Where Heritage and Progress Unite</div>
+        <p class="destination-description">
+            The Philippines is a country where tradition and modernity blend seamlessly. From the historic charm of Vigan’s cobblestone streets to the bustling skyline of Metro Manila, every destination tells a story of resilience and transformation. Whether marveling at the natural beauty of Palawan’s islands or experiencing the vibrant nightlife of Cebu, the Philippines captivates visitors with its rich culture and diverse landscapes.            
+            <br><br>
+            Deeply rooted in history, the country preserves its heritage through centuries-old churches, indigenous traditions, and colorful festivals like Sinulog and Panagbenga. Even in its most modern cities, echoes of the past remain, creating a unique cultural tapestry that celebrates both history and progress.            
+            <br><br>
+            At the same time, the Philippines embraces innovation with rapid urban development, a thriving startup scene, and a strong presence in the creative and tech industries. Cities like Manila and Davao pulse with energy, while emerging industries in gaming, film, and fashion push the country forward. Whether seeking history, nature, or modern adventure, the Philippines offers an unforgettable journey filled with warmth, beauty, and boundless possibilities.        
+        </p>
+        <img class="destination-large-image" src="./assets/img/palawan.jpg" />
+        <img class="destination-image" src="./assets/img/phcity.png" />
+        <img class="destination-image" src="./assets/img/cebu.png" />
+        <img class="destination-image" src="./assets/img/bora.png" />
+    </div>
+
+    <div class="culture">
+        <div class="culture-title">The Philippines: A Harmony of Tradition and Modern Creativity</div>
+        <p class="culture-description">
+            The culture of the Philippines is a vibrant fusion of time-honored traditions and contemporary innovation. From the indigenous rituals of the Cordilleras to the dynamic energy of Metro Manila’s creative scene, the country offers a rich and evolving cultural experience that honors its past while embracing the future.            
+            <br><br>
+            At the heart of Filipino culture is a deep sense of community and heritage. Traditions like bayanihan (the spirit of communal unity), the graceful movements of folk dances like tinikling, and the artistry of indigenous weaving showcase the country’s cultural depth. Festivals such as Sinulog, Ati-Atihan, and Pahiyas bring people together in colorful celebrations of faith, history, and local identity.            
+            <br><br>
+            Yet, the Philippines is also a powerhouse of modern creativity and global influence. Filipino artists, musicians, and filmmakers make their mark on the international stage, while the rise of digital art, street fashion, and indie music fuels the country’s contemporary cultural scene. From traditional craftsmanship to cutting-edge innovations, the Philippines remains a dynamic and ever-evolving nation where heritage and progress coexist in perfect harmony.        
+        </p>
+        <img class="culture-image" src="./assets/img/bayanihan.png" />
+        <img class="culture-image" src="./assets/img/fiesta.png" />
+        <img class="culture-image" src="./assets/img/fiesta2.png" />
+        <img class="culture-large-image" src="./assets/img/mano po.png" />
+    </div>
+
+    <div class="local-spotlights">
+        <h2>Local Spotlights</h2>
+        <div class="local-spotlights-buttons">
+            <button onclick="filterSelection(this, 'all')" class="active">All</button>
+            <button onclick="filterSelection(this, 'food')">Cuisines</button>
+            <button onclick="filterSelection(this, 'destination')">Destinations</button>
+            <button onclick="filterSelection(this, 'culture')">Cultures</button>
+        </div>
+        <div class="local-spotlights-container">
+            <div class="card food show">
+                <img src="./assets/img/phfood1.png" alt="Pancit">
+                <h3>Pancit</h3>
+                <p>
+                    Stir-fried noodles with meat, seafood, and vegetables, a celebration staple.</p>
+            </div>
+            <div class="card destination show">
+                <img src="./assets/img/phvisit1.png" alt="Palawan">
+                <h3>Palawan</h3>
+                <p>A tropical paradise of stunning 
+                    beaches, lagoons, and rich marine life.</p>
+            </div>
+            <div class="card culture show">
+                <img src="./assets/img/phcult1.png" alt="Bayanihan">
+                <h3>Bayanihan</h3>
+                <p>The spirit of communal unity and 
+                    cooperation.
+                    </p>
+            </div>
+            <div class="card food show">
+                <img src="./assets/img/phfood2.png" alt="Sinigang">
+                <h3>Sinigang</h3>
+                <p>Tangy soup with meat, seafood, and 
+                    vegetables.</p>
+            </div>
+            <div class="card destination show">
+                <img src="./assets/img/phvisit2.png" alt="Chocolate Hills">
+                <h3>Chocolate Hills</h3>
+                <p>Famous for Chocolate Hills, tarsiers, 
+                    and beaches.</p>
+            </div>
+            <div class="card culture show">
+                <img src="./assets/img/phcult2.png" alt="Mano po">
+                <h3>Mano po</h3>
+                <p>A sign of respect, asking for an elder's blessing.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="story-navigation1">
+        <a href="link_to_previous_story.html" class="previous-story1">
+            <i class="fas fa-arrow-left" aria-hidden="true"></i>
+            <p>Relish the Flavors of Japan:An Exploration of Balance and Tradition!</p>
+            <span>Previous Story</span>
+            <img src="./assets/img/japanprev.png" alt="Previous Story Image" class="story-image1">
+        </a>
+        <a href="link_to_next_story.html" class="next-story1">
+            <img src="./assets/img/vietnamnext.png" alt="Next Story Image" class="story-image1">
+            <span>Next</span>
+            <p>Vietnamese Cuisine: 
+                A Fusion of Tradition and Flavor</p>
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <footer class="footer">
+        <div class="copyright">&copy;|MMXXV|Volcanion.</div>
+        <img class="footer-logo-img" src="./assets/img/logo.png" alt="Logo">
+        <div class="copyright">All Rights Reserved.</div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
