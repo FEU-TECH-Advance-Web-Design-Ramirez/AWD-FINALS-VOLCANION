@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monaco</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <img src="./assets/img/logo.png" alt="Volcanion" class="logo">
+        <div class="choices">
+            <a href="./index.html" class="choice">Home</a>
+            <a href="./pages/Hidden Gem page/index.html" class="choice">Hidden Gems</a>
+            <a href="https://example.com/choice3" class="choice">About Me.</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu(event)">&#9776;</div>
+    </div>
+
+    <div class="menu" id="menu">
+        <a href="./index.html">Home</a>
+        <a href="#service1">Send a Review</a>
+        <a href="./pages/Stories/index.html">Stories</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+
+    <div class="cont-1">
+        <h1>Monaco: A Journey Through Luxury, <br>Culture, and Must-Visit Destinations</h1>
+    </div>
+
+    <div class="cuisine">
+        <div class="cuisine-title">Monaco's Cuisine: Flavors, Traditions, and Iconic Destinations</div>
+        <p class="cuisine-description">
+            Monaco’s culinary scene is a fusion of Mediterranean flavors, influenced by French and Italian 
+            traditions. From seafood-rich dishes to elegant pastries, Monégasque cuisine reflects both its coastal 
+            location and luxurious lifestyle.
+            <br><br>
+            At the heart of its gastronomy are fresh, high-quality ingredients. Signature dishes like barbajuan, 
+            a crispy pastry filled with cheese and chard, and stocafi, a slow-cooked cod dish, highlight the principality’s 
+            rich food heritage. Sweet treats like fougasse, a nut and orange blossom bread, add a unique local touch.            <br><br>
+
+            Beyond traditional fare, Monaco is home to world-class dining. Michelin-starred restaurants like Le Louis XV – 
+            Alain Ducasse offer refined Riviera cuisine, while Café de Paris Monte-Carlo and Marché de la Condamine provide 
+            classic Monégasque flavors in vibrant settings
+            Whether indulging in fine dining or savoring local specialties, Monaco’s cuisine is a perfect blend of tradition, 
+            luxury, and Mediterranean charm.
+           </p>
+        <img class="cuisine-image" src="./assets/img/Cuisine 1.jpg" />
+        <img class="cuisine-image" src="./assets/img/Cuisine 2.jpg" />
+        <img class="cuisine-image" src="./assets/img/Cuisine 3.jpg" />
+        <img class="cuisine-large-image" src="./assets/img/Cuisine 4.jpg" />
+    </div>
+
+    <div class="destination">
+        <div class="destination-title">Glamour, History, and Breathtaking Views</div>
+        <p class="destination-description">
+            Monaco, the jewel of the French Riviera, is a destination where luxury meets history. Despite its small size, the principality 
+            offers a wealth of stunning attractions, from historic landmarks to glamorous hotspots.
+            <br><br>
+            At the heart of Monaco lies Monte Carlo, famous for its world-renowned Casino de Monte-Carlo, where elegance and high-stakes 
+            gaming blend seamlessly. Nearby, the Opéra de Monte-Carlo enchants visitors with its grand architecture and cultural performances.            
+            <br><br>
+            For history lovers, Le Rocher (The Rock) is home to the Prince’s Palace, offering breathtaking views and a glimpse into Monaco’s royal heritage. 
+            The Oceanographic Museum, perched dramatically on a cliffside, showcases marine life and the legacy of Jacques Cousteau.
+            <br><br>
+            Nature enthusiasts can escape to the serene Jardin Exotique, a botanical paradise filled with rare plants and stunning Mediterranean views. 
+            Meanwhile, the glamorous Larvotto Beach invites visitors to relax by the sparkling blue waters of the Riviera.
+            </p>
+        <img class="destination-large-image" src="./assets/img/Destination 1.jpg" />
+        <img class="destination-image" src="./assets/img/Destination 2.jpg" />
+        <img class="destination-image" src="./assets/img/Destination 3.jpg" />
+        <img class="destination-image" src="./assets/img/Destination 4.jpg" />
+    </div>
+
+    <div class="culture">
+        <div class="culture-title">A Blend of Heritage and Prestige</div>
+        <p class="culture-description">
+            Monaco is a principality where rich traditions and modern sophistication come together, 
+            creating a unique cultural identity. Despite its small size, Monaco boasts a deep-rooted history, royal heritage, 
+            and strong Mediterranean influences that shape its way of life.
+            <br><br>
+            At the heart of Monaco’s traditions is the Prince’s Palace, the official residence of the Grimaldi family for 
+            over 700 years. A key ceremonial event is the Changing of the Guard, a daily ritual that symbolizes Monaco’s 
+            respect for its monarchy. Religious traditions also play a vital role, with events like Saint Devota’s Festival, 
+            an annual celebration honoring the principality’s 
+            patron saint with a grand procession, fireworks, and the symbolic burning of a boat.            
+            <br><br>
+            Monaco is home to world-class cultural institutions, from the Monte Carlo Opera to the renowned Monte Carlo Ballet. 
+            The principality also hosts internationally acclaimed events such as the Monaco Grand Prix, a prestigious Formula 1 
+            race that brings excitement and glamour to the streets of Monte Carlo, and the Monaco Yacht Show, a showcase of 
+            luxury and innovation in the maritime world. 
+           </p>
+        <img class="culture-image" src="./assets/img/Culture 1.jpg" />
+        <img class="culture-image" src="./assets/img/Culture 3.jpg" />
+        <img class="culture-image" src="./assets/img/Culture 4.jpg" />
+        <img class="culture-large-image" src="./assets/img/Culture 2.jpg" />
+    </div>
+
+    <div class="local-spotlights">
+        <h2>Local Spotlights</h2>
+        <div class="local-spotlights-buttons">
+            <button onclick="filterSelection(this, 'all')" class="active">All</button>
+            <button onclick="filterSelection(this, 'food')">Cuisines</button>
+            <button onclick="filterSelection(this, 'destination')">Destinations</button>
+            <button onclick="filterSelection(this, 'culture')">Cultures</button>
+        </div>
+        <div class="local-spotlights-container">
+            <div class="card food show">
+                <img src="./assets/img/Local Spotlights Food 1.jpg" alt="Barbajuan">
+                <h3>Barbajuan</h3>
+                <p>Barbajuan is Monaco’s crispy, stuffed pastry filled with Swiss chard and cheese </p>
+            </div>
+            <div class="card destination show">
+                <img src="./assets/img/Local Spotlights Destination 1.jpg" alt="Cathédrale de Monaco">
+                <h3>Cathédrale de Monaco</h3>
+                <p>Cathédrale de Monaco is a Romanesque church, known for its stunning architecture and royal tombs.</p>
+            </div>
+            <div class="card culture show">
+                <img src="./assets/img/Local Spotlights Culture 1.jpg" alt="La Fête Nationale ">
+                <h3>La Fête Nationale </h3>
+                <p>La Fête Nationale is Monaco's National Day, celebrated with parades, fireworks, and royal events.</p>
+            </div>
+            <div class="card food show">
+                <img src="./assets/img/Local Spotlights Food 2.jpg" alt="Pan Bagnat">
+                <h3>Pan Bagnat</h3>
+                <p>Pan Bagnat is a French sandwich from Nice, filled with tuna, vegetables, and olive oil.</p>
+            </div>
+            <div class="card destination show">
+                <img src="./assets/img/Local Spotlights Destination 2.jpg" alt="Jardin Exotique">
+                <h3>Jardin Exotique</h3>
+                <p>Jardin Exotique is a botanical garden in Monaco, featuring exotic plants and panoramic views.</p>
+            </div>
+            <div class="card culture show">
+                <img src="./assets/img/Local Spotlights Culture 2.jpg" alt="Monaco Grand Prix">
+                <h3>Monaco Grand Prix</h3>
+                <p>The Monaco Grand Prix is a prestigious Formula 1 race held on the streets of Monte Carlo.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="story-navigation1">
+        <a href="link_to_previous_story.html" class="previous-story1">
+            <i class="fas fa-arrow-left" aria-hidden="true"></i>
+            <p>Experience Italy: A Journey Through Food, Culture, and Must-Visit Destinations</p>
+            <span>Previous Story</span>
+            <img src="./assets/img/Previous Story Italy.jpg" alt="Previous Story Image" class="story-image1">
+        </a>
+        <a href="link_to_next_story.html" class="next-story1">
+            <img src="./assets/img/Next Story Spain.jpg" alt="Next Story Image" class="story-image1">
+            <span>Next Story</span>
+            <p>Experience Spain: A Journey Through Flavor, Culture, and Must-Visit Destinations</p>
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <footer class="footer">
+        <div class="copyright">&copy;|MMXXV|Volcanion.</div>
+        <img class="footer-logo-img" src="./assets/img/logo.png" alt="Logo">
+        <div class="copyright">All Rights Reserved.</div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

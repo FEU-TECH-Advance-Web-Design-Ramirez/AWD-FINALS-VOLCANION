@@ -75,7 +75,7 @@ body {
 }
 
 .cont-1 {
-    background-image: url('../img/italy.jpg');
+    background-image: url('../img/Island.jpg');
     background-size: cover;
     background-position: center;
     height: 70vh;
@@ -281,7 +281,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    
     
 }
 
