@@ -4,16 +4,17 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
+  <a href="https://github.com/KeithSantos">
   <!-- TODO: If you want to add logo or banner you can add it here -->
     <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">AWD-FINALS-VOLCANION</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+
+Foodie Traveler is your ultimate companion for discovering the best culinary experiences worldwide. Explore curated restaurant recommendations, submit reviews, and share hidden food gems with fellow travelers. With an inviting and adventurous design, our platform connects food lovers and cultural explorers through authentic, community-driven insights. Start your journey and taste the world with confidence!
 </div>
 
 <br />
@@ -22,7 +23,7 @@
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
 ![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
 
-[![wakatime](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8.svg)](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8)
+[![wakatime](https://wakatime.com/badge/user/018efa0c-68f3-42b9-8dc0-b06b516e8ade/project/71c24f15-c990-466e-9089-0c034e1293de.svg)](https://wakatime.com/badge/user/018efa0c-68f3-42b9-8dc0-b06b516e8ade/project/71c24f15-c990-466e-9089-0c034e1293de)
 
 ---
 
@@ -62,17 +63,22 @@
 Description of the project in details.
 
 Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
+- Foodie Traveler is a mobile and web application designed for food enthusiasts and travelers to discover, review, and share culinary experiences from around the world. The platform allows users to explore curated restaurant recommendations, submit personal reviews, and engage with a like-minded community.
+- The purpose of Foodie Traveler is to help users find and share the best food experiences by combining restaurant discovery with travel planning. It aims to create a vibrant community of food lovers who contribute authentic reviews, highlight hidden culinary gems, and receive personalized recommendations.
+- 
+User Authentication: Secure login and registration.
+
+Food Submission & Reviews: Users can submit dishes, add restaurant locations, rate meals, and share personal reviews.
+
+Admin Verification: Ensuring content authenticity by approving food submissions and reviews.
+
 - What technology used and how it is used
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
+- MultiPage Website
 - Parallax transition
-- Transactional
 
 ### Technology
 <!-- TODO: List of Technology Used -->
