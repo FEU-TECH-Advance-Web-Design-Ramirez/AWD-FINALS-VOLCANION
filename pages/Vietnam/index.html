@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnam</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <img src="./assets/img/logo.png" alt="Volcanion" class="logo">
+        <div class="choices">
+            <a href="./index.html" class="choice">Home</a>
+            <a href="./pages/Hidden Gem page/index.html" class="choice">Hidden Gems</a>
+            <a href="https://example.com/choice3" class="choice">About Me.</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu(event)">&#9776;</div>
+    </div>
+
+    <div class="menu" id="menu">
+        <a href="./index.html">Home</a>
+        <a href="#service1">Send a Review</a>
+        <a href="./pages/Stories/index.html">Stories</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+
+    <div class="cont-1">
+        <h1>Experience Vietnam: Food, Culture, and Must-Visit Places </h1>
+    </div>
+
+    <div class="cuisine">
+        <div class="cuisine-title">Vietnamese Cuisine: A Fusion of Tradition and Flavor</div>
+        <p class="cuisine-description">
+            Vietnam’s culinary scene is a vibrant fusion of time-honored traditions and modern creativity. From the delicate balance of pho, with its aromatic broth and tender meats, to contemporary dishes that blend local flavors with global influences, Vietnamese cuisine continues to win hearts around the world.            
+            <br><br>
+            At the core of this culinary tradition is a deep respect for fresh, seasonal ingredients and balanced flavors. Pho, a traditional noodle soup, reflects Vietnam’s dedication to harmony in taste, while street foods like banh mi and goi cuon offer a taste of the bustling, everyday life in Vietnamese cities.
+            <br><br>
+            But Vietnam’s food culture is not just about preserving the past—it’s about innovation. Ho Chi Minh City and Hanoi pulse with culinary experimentation, with chefs blending traditional ingredients with new techniques to create exciting dishes. From creative takes on banh xeo (Vietnamese pancakes) to refreshing desserts like che, Vietnam’s food scene embraces both heritage and progress, captivating food lovers globally.        
+        </p>
+        <img class="cuisine-image" src="./assets/img/soup.png" />
+        <img class="cuisine-image" src="./assets/img/burger.png" />
+        <img class="cuisine-image" src="./assets/img/burger2.png" />
+        <img class="cuisine-large-image" src="./assets/img/kopi.png" />
+    </div>
+
+    <div class="destination">
+        <div class="destination-title">Enchanting Vietnam: Land of Timeless Charm</div>
+        <p class="destination-description">
+            Vietnam is a country where tradition and innovation come together seamlessly. From the ancient charm of Hanoi’s Old Quarter and the tranquil beauty of Ha Long Bay to the bustling streets of Ho Chi Minh City and the modern skyscrapers of Danang, Vietnam offers a perfect blend of the past and the future. Whether exploring the lush landscapes of the Mekong Delta or enjoying the vibrant nightlife of Saigon, Vietnam captivates travelers with its rich heritage and dynamic growth.            
+            <br><br>
+            Deeply rooted in history, Vietnam preserves its traditions through ancient temples, the art of water puppetry, and cultural celebrations like Tết (Lunar New Year). Even in the most modern cities, these time-honored practices coexist with a rapidly evolving culture, creating a unique experience for all who visit.            
+            <br><br>
+            At the same time, Vietnam embraces the future with cutting-edge technology, expanding infrastructure, and a growing creative scene. Cities like Hanoi and Ho Chi Minh City are at the forefront of global trends, while smaller towns retain their charm and authenticity. Whether seeking history, nature, or modern adventure, Vietnam offers a journey that’s both timeless and ever-evolving.        
+        </p>
+        <img class="destination-large-image" src="./assets/img/place1.png" />
+        <img class="destination-image" src="./assets/img/place2.png" />
+        <img class="destination-image" src="./assets/img/place3.png" />
+        <img class="destination-image" src="./assets/img/place4.png" />
+    </div>
+
+    <div class="culture">
+        <div class="culture-title">Vietnam: A Harmonious Blend of Tradition and Innovation</div>
+        <p class="culture-description">
+            Vietnam is a country where ancient traditions and modern innovation weave together into a vibrant cultural tapestry. From the historic charm of Hanoi’s Old Quarter to the dynamic energy of Ho Chi Minh City’s bustling streets, Vietnam offers a unique blend of the past and the future.            
+            <br><br>
+            At the heart of Vietnam’s heritage are its time-honored practices—ancient temples, traditional festivals, and artisanal crafts—preserved through generations. Yet, the country is also a place of progress, where new ideas, technology, and creativity flourish, from the arts to the rapidly growing tech industry.            
+            <br><br>
+            Whether immersed in the beauty of its landscapes, the flavors of its cuisine, or the energy of its cities, Vietnam continues to honor its past while embracing the future, creating a harmonious blend of tradition and innovation that captivates all who experience it.        
+        </p>
+        <img class="culture-image" src="./assets/img/airballons.png" />
+        <img class="culture-image" src="./assets/img/mganetay.png" />
+        <img class="culture-image" src="./assets/img/waterpuppet.png" />
+        <img class="culture-large-image" src="./assets/img/waterpuppet2.png" />
+    </div>
+
+    <div class="local-spotlights">
+        <h2>Local Spotlights</h2>
+        <div class="local-spotlights-buttons">
+            <button onclick="filterSelection(this, 'all')" class="active">All</button>
+            <button onclick="filterSelection(this, 'food')">Cuisines</button>
+            <button onclick="filterSelection(this, 'destination')">Destinations</button>
+            <button onclick="filterSelection(this, 'culture')">Cultures</button>
+        </div>
+        <div class="local-spotlights-container">
+            <div class="card food show">
+                <img src="./assets/img/food1.png" alt="Goi Cuon">
+                <h3>Goi Cuon</h3>
+                <p>Fresh rice paper rolls with shrimp, 
+                    herbs, and vermicelli.</p>
+            </div>
+            <div class="card destination show">
+                <img src="./assets/img/vietvisit1.png" alt="Ha Long Bay">
+                <h3>Ha Long Bay</h3>
+                <p>Famous for its limestone islands 
+                    and emerald waters.</p>
+            </div>
+            <div class="card culture show">
+                <img src="./assets/img/vietcult1.png" alt="Water Puppetry">
+                <h3>Water Puppetry</h3>
+                <p>Thailand’s New Year festival with water fights and cultural rituals.</p>
+            </div>
+            <div class="card food show">
+                <img src="./assets/img/food2.png" alt="Bánh Xèo">
+                <h3>Bánh Xèo</h3>
+                <p>Spicy shrimp soup with herbs and lime.</p>
+            </div>
+            <div class="card destination show">
+                <img src="./assets/img/vietcult2.png" alt="Hoi An">
+                <h3>Ao Dai </h3>
+                <p>Tropical islands with clear waters and cliffs.</p>
+            </div>
+            <div class="card culture show">
+                <img src="./assets/img/vietvisit2.png" alt="Buddhism">
+                <h3>Hoi An</h3>
+                <p>Ancient town with preserved
+                    architecture and vibrant lanterns.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="story-navigation1">
+        <a href="link_to_previous_story.html" class="previous-story1">
+            <i class="fas fa-arrow-left" aria-hidden="true"></i>
+            <p>Philippine Cuisine: A Blend of 
+                Heritage and Innovation</p>
+            <span>Previous Story</span>
+            <img src="./assets/img/prevph.png" alt="Previous Story Image" class="story-image1">
+        </a>
+        <a href="link_to_next_story.html" class="next-story1">
+            <img src="./assets/img/nextthai.png" alt="Next Story Image" class="story-image1">
+            <span>Next</span>
+            <p>Enchanting Thailand: A Journey Through  Tradition and Modernity</p>
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <footer class="footer">
+        <div class="copyright">&copy;|MMXXV|Volcanion.</div>
+        <img class="footer-logo-img" src="./assets/img/logo.png" alt="Logo">
+        <div class="copyright">All Rights Reserved.</div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
