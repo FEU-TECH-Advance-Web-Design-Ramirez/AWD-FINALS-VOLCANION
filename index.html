@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volcanion.</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
-    <div class="header">
+    <div class="header d-flex justify-content-between align-items-center p-2">
         <img src="./assets/img/logo.png" alt="Volcanion" class="logo">
-        <div class="choices">
+        <div class="choices d-flex gap-3">
             <a href="./index.html" class="choice">Home</a>
             <a href="./pages/Hidden Gem page/index.html" class="choice">Hidden Gems</a>
-            <a href="https://example.com/choice3" class="choice">About Me.</a>
+            <a href="./pages/about-me/index.html" class="choice">About Me.</a>
         </div>
         <div class="hamburger" onclick="toggleMenu(event)">&#9776;</div>
     </div>
     
     <div class="menu" id="menu">
         <a href="./index.html">Home</a>
-        <a href="#service1">Send a Review</a>
+        <a href="./pages/Review-Contact Us/index.html">Send a Review</a>
         <a href="./pages/Stories/index.html">Stories</a>
-        <a href="#contact">Contact Us</a>
+        <a href="./pages/Review-Contact Us/index.html">Contact Us</a>
     </div>
 
-    <div class="cont_1">
-        <div class="text-content">
+    <div class="cont_1 d-flex flex-column flex-md-row justify-content-center p-5" style="background-color: #E3E0DB;">
+        <div class="text-content flex-fill p-3">
             <h1>Discover the</h1>
             <h1 class="subheading"><span class="hidden">Hidden</span> Treasures</h1>
             <p>Explore enchanting, lesser-known destinations around the globe. 
@@ -34,8 +35,8 @@
             uncover the beauty and flavors waiting just off the beaten path!</p>
         </div>
         
-        <div class="world-container">
-            <img src="./assets/img/map_vector.png" alt="World Map" class="map">
+        <div class="world-container position-relative">
+            <img src="./assets/img/map_vector.png" alt="World Map" class="map img-fluid">
             <img src="./assets/img/bora.jpg" alt="Bora" class="photo photo1">
             <img src="./assets/img/sushi.jpg" alt="Sushi" class="photo photo2">
             <img src="./assets/img/thai.jpg" alt="Thailand" class="photo photo3">
@@ -67,7 +68,7 @@
             </div>
             <div class="destination">
                 <img src="./assets/img/cebu.jpg" alt="Philippines">
-                <a href="https://en.wikipedia.org/wiki/Rio_de_Janeiro" target="_blank" class="destination-info-link">
+                <a href="./pages/Philippines/index.html" target="_blank" class="destination-info-link">
                     <div class="destination-info">
                         <h2>Philippines</h2>
                         <p>Where Culture, Cuisine, and Natural Wonders Meet.</p>
@@ -76,9 +77,9 @@
                 </a>
             </div>
         </div>
-        <div class="destination-buttons">
-            <button onclick="prevDestination()">Previous</button>
-            <button onclick="nextDestination()">Next</button>
+        <div class="destination-buttons d-flex justify-content-center">
+            <button class="btn btn-dark" onclick="prevDestination()">Previous</button>
+            <button class="btn btn-dark" onclick="nextDestination()">Next</button>
         </div>
     </div>
 
@@ -86,8 +87,8 @@
         <div class="cont-2">
             <h1>Latest Stories</h1>
         </div>
-        <div class="main-group" onclick="window.location.href='./pages/Hidden Gem page/index.html'">
-            <img src="./assets/img/spain.jpg" alt="Spain">
+        <div class="main-group d-flex mb-3" onclick="window.location.href='./pages/Spain/index.html'">
+            <img src="./assets/img/spain.jpg" alt="Spain" class="img-fluid">
             <div class="main-content">
                 <h2 class="title">Spain: A Rich Tapestry of Culture, Cuisine, and Scenic Destinations.</h2>
                 <p class="description">Spain offers a vibrant blend of rich 
@@ -97,23 +98,23 @@
                 </p>
             </div>
         </div>
-        <div class="container_2">
-            <div class="group" onclick="window.location.href='./pages/Hidden Gem page/index.html'">
-                <img src="./assets/img/barbajuan.jpg" alt="Barbajuan">
+        <div class="container_2 d-flex flex-wrap">
+            <div class="group" onclick="window.location.href='./pages/Monaco/index.html'">
+                <img src="./assets/img/barbajuan.jpg" alt="Barbajuan" class="img-fluid">
                 <div class="content">
                     <h2 class="title">Barbajuan: A Crispy Taste of Monaco's Tradition</h2>
                     <p class="description">Barbajuan is a traditional dish from the French Riviera, especially popular in Monaco. It consists of a crispy pastry filled with a savory mix of Swiss chard, ricotta cheese, and herbs, often served as an appetizer or snack.</p>
                 </div>
             </div>
-            <div class="group" onclick="window.location.href='#'">
-                <img src="./assets/img/ao dai.jpg" alt="Áo Dài">
+            <div class="group" onclick="window.location.href='./pages/Vietnam/index.html'">
+                <img src="./assets/img/ao dai.jpg" alt="Áo Dài" class="img-fluid">
                 <div class="content">
                     <h2 class="title">Áo Dài: The Timeless Elegance of Vietnam's Traditional Dress</h2>
                     <p class="description">The Áo Dài is a traditional Vietnamese dress known for its graceful, form-fitting silhouette. Worn by both men and women, it blends elegance with cultural significance, often featuring vibrant colors and intricate designs.</p>
                 </div>
             </div>
-            <div class="group" onclick="window.location.href='#'">
-                <img src="./assets/img/phiphi.jpg" alt="Phi Phi Island">
+            <div class="group" onclick="window.location.href='./pages/Thailand/index.html'">
+                <img src="./assets/img/phiphi.jpg" alt="Phi Phi Island" class="img-fluid">
                 <div class="content">
                     <h2 class="title">Phi Phi Islands: A Tropical Paradise of Crystal Waters and Dramatic Cliffs</h2>
                     <p class="description">The Phi Phi Islands, located in Thailand, are renowned for their stunning turquoise waters, towering limestone cliffs, and vibrant marine life. A popular destination for beach lovers, divers, and adventure seekers, it offers breathtaking scenery and a serene atmosphere.</p>
@@ -122,7 +123,7 @@
         </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer d-flex justify-content-between align-items-center p-2">
         <div class="copyright">&copy;|MMXXV|Volcanion.</div>
         <img class="footer-logo-img" src="./assets/img/logo.png" alt="Logo">
         <div class="copyright">All Rights Reserved.</div>
