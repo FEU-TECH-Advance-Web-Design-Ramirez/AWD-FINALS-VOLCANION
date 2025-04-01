@@ -59,7 +59,7 @@ body {
 }
 .choice:hover {
     text-decoration: underline;
-    color: #000; /* Change color on hover */
+    color: #000;
 }
 .show {
     display: block;
