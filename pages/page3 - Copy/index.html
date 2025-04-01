@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italy</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <img src="./assets/img/logo.png" alt="Volcanion" class="logo">
+        <div class="choices">
+            <a href="./index.html" class="choice">Home</a>
+            <a href="./pages/Hidden Gem page/index.html" class="choice">Hidden Gems</a>
+            <a href="https://example.com/choice3" class="choice">About Me.</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu(event)">&#9776;</div>
+    </div>
+
+    <div class="menu" id="menu">
+        <a href="./index.html">Home</a>
+        <a href="#service1">Send a Review</a>
+        <a href="./pages/Stories/index.html">Stories</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+
+    <div class="cont-1">
+        <h1>Experience Italy: A Journey Through Food, <br>Culture, and Must-Visit Destinations</h1>
+    </div>
+
+    <div class="cuisine">
+        <div class="cuisine-title">Italian Cuisine: A Taste of Tradition and Innovation</div>
+        <p class="cuisine-description">
+            Italian cuisine blends timeless tradition with modern creativity, making it one of the world's most beloved culinary experiences. Rooted in regional diversity, it goes beyond pasta and pizza, reflecting a deep connection to culture and quality ingredients.
+            <br><br>
+            Italian food emphasizes simplicity and fresh, high-quality ingredients. Each region has its specialties: Northern Italy offers creamy risottos and rich meats, while Southern Italy favors bold tomato-based dishes and seafood. Classics like Pasta Carbonara, Osso Buco, and Margherita Pizza showcase this rich heritage. Meals are central to family traditions, passed down through generations and enjoyed at a leisurely pace.
+            <br><br>
+            While tradition prevails, Italian cuisine evolves with contemporary influences. Chefs experiment with truffle-infused pasta, gourmet pizzas, and plant-based adaptations like zucchini noodles and dairy-free gelato. Modern techniques, including molecular gastronomy, add artistic flair to Italian dishes.
+        </p>
+        <img class="cuisine-image" src="./assets/img/italy.jpg" />
+        <img class="cuisine-image" src="./assets/img/italy.jpg" />
+        <img class="cuisine-image" src="./assets/img/italy.jpg" />
+        <img class="cuisine-large-image" src="./assets/img/italy.jpg" />
+    </div>
+
+    <div class="destination">
+        <div class="destination-title">Timeless Italy: A Land of History and Charm</div>
+        <p class="destination-description">
+            Italy is a country where ancient heritage and modern vibrancy blend seamlessly. From Rome’s historic Colosseum and Vatican City to Milan’s high-fashion streets and Venice’s romantic canals, every destination tells a story of art, culture, and elegance. Whether admiring the rolling hills of Tuscany or experiencing the coastal beauty of Amalfi, Italy enchants travelers with its diverse landscapes and rich traditions.
+            <br><br>
+            Deeply rooted in history, Italy preserves its legacy through Renaissance masterpieces, grand cathedrals, and time-honored traditions like pasta-making and wine production. Cities like Florence and Naples offer glimpses into Italy’s artistic and culinary excellence, where centuries-old craftsmanship continues to thrive.
+            <br><br>
+            At the same time, Italy embraces modernity with cutting-edge design, luxury fashion, and Michelin-starred cuisine. Milan stands at the forefront of global innovation, while cities like Bologna and Turin lead in technology and automotive excellence. Whether seeking history, gastronomy, or contemporary elegance, Italy offers an unforgettable journey through time and taste.
+        </p>
+        <img class="destination-large-image" src="./assets/img/italy.jpg" />
+        <img class="destination-image" src="./assets/img/italy.jpg" />
+        <img class="destination-image" src="./assets/img/italy.jpg" />
+        <img class="destination-image" src="./assets/img/italy.jpg" />
+    </div>
+
+    <div class="culture">
+        <div class="culture-title">Timeless Italy: A Land of History and Charm</div>
+        <p class="culture-description">
+            Italy is a country where ancient heritage and modern vibrancy blend seamlessly. From Rome’s historic Colosseum and Vatican City to Milan’s high-fashion streets and Venice’s romantic canals, every destination tells a story of art, culture, and elegance. Whether admiring the rolling hills of Tuscany or experiencing the coastal beauty of Amalfi, Italy enchants travelers with its diverse landscapes and rich traditions.
+            <br><br>
+            Deeply rooted in history, Italy preserves its legacy through Renaissance masterpieces, grand cathedrals, and time-honored traditions like pasta-making and wine production. Cities like Florence and Naples offer glimpses into Italy’s artistic and culinary excellence, where centuries-old craftsmanship continues to thrive.
+            <br><br>
+            At the same time, Italy embraces modernity with cutting-edge design, luxury fashion, and Michelin-starred cuisine. Milan stands at the forefront of global innovation, while cities like Bologna and Turin lead in technology and automotive excellence. Whether seeking history, gastronomy, or contemporary elegance, Italy offers an unforgettable journey through time and taste.
+        </p>
+        <img class="culture-image" src="./assets/img/italy.jpg" />
+        <img class="culture-image" src="./assets/img/italy.jpg" />
+        <img class="culture-image" src="./assets/img/italy.jpg" />
+        <img class="culture-large-image" src="./assets/img/italy.jpg" />
+    </div>
+
+    <div class="local-spotlights">
+        <h2>Local Spotlights</h2>
+        <div class="local-spotlights-buttons">
+            <button onclick="filterSelection(this, 'all')" class="active">All</button>
+            <button onclick="filterSelection(this, 'food')">Cuisines</button>
+            <button onclick="filterSelection(this, 'destination')">Destinations</button>
+            <button onclick="filterSelection(this, 'culture')">Cultures</button>
+        </div>
+        <div class="local-spotlights-container">
+            <div class="card food show">
+                <img src="sushi.jpg" alt="Sushi">
+                <h3>Sushi</h3>
+                <p>Vinegared rice with fresh seafood or toppings.</p>
+            </div>
+            <div class="card destination show">
+                <img src="osaka.jpg" alt="Osaka">
+                <h3>Osaka</h3>
+                <p>Known for street food, Osaka Castle, and Universal Studios Japan.</p>
+            </div>
+            <div class="card culture show">
+                <img src="tea.jpg" alt="Tea Ceremony">
+                <h3>Tea Ceremony</h3>
+                <p>A highly ritualized practice emphasizing harmony and respect.</p>
+            </div>
+            <div class="card food show">
+                <img src="tempura.jpg" alt="Tempura">
+                <h3>Tempura</h3>
+                <p>Lightly battered and deep-fried seafood or vegetables.</p>
+            </div>
+            <div class="card destination show">
+                <img src="hokkaido.jpg" alt="Hokkaido">
+                <h3>Hokkaido</h3>
+                <p>Offers stunning winter scenery, hot springs, and ski resorts.</p>
+            </div>
+            <div class="card culture show">
+                <img src="sumo.jpg" alt="Sumo Wrestling">
+                <h3>Sumo Wrestling</h3>
+                <p>Japan's national sport with deep ties to Shinto rituals.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="story-navigation1">
+        <a href="link_to_previous_story.html" class="previous-story1">
+            <i class="fas fa-arrow-left" aria-hidden="true"></i>
+            <p>Savor the Flavors of Spain: A Culinary Journey Through Tradition and Taste!</p>
+            <span>Previous Story</span>
+            <img src="path/to/your/image1.jpg" alt="Previous Story Image" class="story-image1">
+        </a>
+        <a href="link_to_next_story.html" class="next-story1">
+            <img src="path/to/your/image2.jpg" alt="Next Story Image" class="story-image1">
+            <span>Next</span>
+            <p>Discover the Secrets of Italian Cuisine: A Journey Through Italy!</p>
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <footer class="footer">
+        <div class="copyright">&copy;|MMXXV|Volcanion.</div>
+        <img class="footer-logo-img" src="./assets/img/logo.png" alt="Logo">
+        <div class="copyright">All Rights Reserved.</div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
