@@ -69,6 +69,7 @@ body {
     background-color: #E3E0DB;
 }
 .card {
+    font-family: "Lato", sans-serif;
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -99,12 +100,12 @@ body {
     }
 }
 .stories-title {
-    font-family: 'Georgia', serif;
+    font-family: "Inknut Antiqua", serif;
     font-size: 28px;
     text-align: center;
     margin: 20px 0;
     position: relative;
-    color: #2c3e50;
+    color: #2c2c2c;
     background-color: #E3E0DB;
 }
 .stories-title::after {
