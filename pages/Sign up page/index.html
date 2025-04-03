@@ -15,7 +15,7 @@
             <a href="./pages/Hidden Gem page/index.html" class="choice">Hidden Gems</a>
             <a href="https://example.com/choice3" class="choice">About Me</a>
         </nav>
-        <div class="hamburger" onclick="toggleMenu(event)">&#9776;</div>
+        <div class="hamburger">&#9776;</div>
     </header>
 
     <div class="menu" id="menu">
@@ -25,18 +25,21 @@
         <a href="#contact">Contact Us</a>
     </div>
 
-    <main class="sign-in-section">
-        <h1>Volcanion</h1>
-        <form class="sign-in-form">
+    <main class="sign-up-section">
+        <h1>Sign Up</h1>
+        <form class="sign-up-form">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
 
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
 
-            <button type="submit">Sign In</button>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
 
-            <p class="sign-up-link">Don't have an account? <a href="./pages/signup.html">Sign Up</a></p>
+            <button type="submit">Sign Up</button>
+
+            <p class="sign-in-link">Already have an account? <a href="./pages/signin.html">Sign In</a></p>
         </form>
     </main>
 
@@ -46,6 +49,6 @@
         <div class="copyright">All Rights Reserved.</div>
     </footer>
 
-    <script src="./assets/js/srcipt.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
