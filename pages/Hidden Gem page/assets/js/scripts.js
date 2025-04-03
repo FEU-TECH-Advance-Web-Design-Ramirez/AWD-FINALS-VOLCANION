@@ -1,82 +1,85 @@
+// Toggle Menu Function
 function toggleMenu(event) {
     const menu = document.getElementById("menu");
     menu.classList.toggle("show");
     
-    event.stopPropagation();
+    event.stopPropagation(); // Prevents click event from propagating to the document
 }
 
+// Close Menu when clicking outside
 document.addEventListener("click", function(event) {
     const menu = document.getElementById("menu");
     const hamburger = document.querySelector(".hamburger");
 
-    if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+    if (menu && hamburger && !menu.contains(event.target) && !hamburger.contains(event.target)) {
         menu.classList.remove("show");
     }
 });
 
+// Initialize Leaflet Map
 var map = L.map('map').setView([12, 122], 3.5); // Centered around the Philippines
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 
-var hiddenGems = [
+// Famous Landmarks in the 7 Countries
+var landmarks = [
     { 
-        name: "Vietnam", 
-        lat: 14.0583, 
-        lng: 108.2772, 
-        description: "A Vibrant Tapestry of Culture, History, and Natural Beauty",
-        link: "../../../../index.html"
+        country: "Vietnam",
+        name: "Ha Long Bay", 
+        lat: 20.9101, 
+        lng: 107.1839, 
+        description: "A UNESCO World Heritage Site known for emerald waters and limestone islands."
     },
     { 
-        name: "Thailand", 
-        lat: 15.8700, 
-        lng: 100.9925, 
-        description: "A Tropical Paradise of Rich Culture and Breathtaking Beaches",
-        link: "https://en.wikipedia.org/wiki/Thailand"
+        country: "Thailand",
+        name: "Grand Palace", 
+        lat: 13.7500, 
+        lng: 100.4913, 
+        description: "A stunning royal palace and the heart of Thailand's history."
     },
     { 
-        name: "Italy", 
-        lat: 41.8719, 
-        lng: 12.5674, 
-        description: "A Timeless Journey Through Art, History, and Culinary Excellence",
-        link: "https://en.wikipedia.org/wiki/Italy"
+        country: "Italy",
+        name: "Colosseum", 
+        lat: 41.8902, 
+        lng: 12.4922, 
+        description: "An iconic Roman amphitheater known for gladiator battles."
     },
     { 
-        name: "Monaco", 
-        lat: 43.7384, 
-        lng: 7.4246, 
-        description: "A Glamorous Haven of Luxury and Mediterranean Charm",
-        link: "https://en.wikipedia.org/wiki/Monaco"
+        country: "Monaco",
+        name: "Monte Carlo Casino", 
+        lat: 43.7394, 
+        lng: 7.4274, 
+        description: "A world-famous casino known for luxury and James Bond films."
     },
     { 
-        name: "Spain", 
-        lat: 40.4637, 
-        lng: 3.7492, 
-        description: "A Colorful Fusion of Passion, Tradition, and Diverse Landscapes",
-        link: "https://en.wikipedia.org/wiki/Spain"
+        country: "Spain",
+        name: "Sagrada Familia", 
+        lat: 41.4036, 
+        lng: 2.1744, 
+        description: "A breathtaking basilica designed by Antoni Gaudí."
     },
     { 
-        name: "Japan", 
-        lat: 36.2048, 
-        lng: 138.2529, 
-        description: "A Harmonious Blend of Tradition, Innovation, and Stunning Landscapes",
-        link: "https://en.wikipedia.org/wiki/Japan"
+        country: "Japan",
+        name: "Mount Fuji", 
+        lat: 35.3606, 
+        lng: 138.7274, 
+        description: "Japan's highest and most iconic mountain."
     },
     { 
-        name: "Philippines", 
-        lat: 12.8797, 
-        lng: 121.7740, 
-        description: "An Archipelago of Stunning Islands and Warm Hospitality",
-        link: "https://en.wikipedia.org/wiki/Philippines"
+        country: "Philippines",
+        name: "Chocolate Hills", 
+        lat: 9.8232, 
+        lng: 124.1435, 
+        description: "A natural wonder of cone-shaped hills in Bohol."
     }
 ];
 
-hiddenGems.forEach(function(gem) {
-    var marker = L.marker([gem.lat, gem.lng]).addTo(map);
+landmarks.forEach(function(landmark) {
+    var marker = L.marker([landmark.lat, landmark.lng]).addTo(map);
     marker.bindPopup(`
-        <b>${gem.name}</b><br>
-        ${gem.description}<br>
-        <a href="${gem.link}">Learn more</a>
+        <b>${landmark.name} (${landmark.country})</b><br>
+        ${landmark.description}
     `);
 });
