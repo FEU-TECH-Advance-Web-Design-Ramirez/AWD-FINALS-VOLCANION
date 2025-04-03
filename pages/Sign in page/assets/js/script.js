@@ -1,8 +1,6 @@
-// Header //
 function toggleMenu(event) {
     const menu = document.getElementById("menu");
     menu.classList.toggle("show");
-    
     event.stopPropagation();
 }
 
@@ -15,16 +13,11 @@ document.addEventListener("click", function(event) {
     }
 });
 
-//
-
-
 let currentIndex = 0;
 const destinations = document.querySelectorAll(".destination");
 
 function showDestination(index) {
-    destinations.forEach((destination, i) => {
-        destination.classList.remove("active");
-    });
+    destinations.forEach(destination => destination.classList.remove("active"));
     destinations[index].classList.add("active");
 }
 
@@ -38,5 +31,4 @@ function prevDestination() {
     showDestination(currentIndex);
 }
 
-// Auto-rotate every 3 seconds
 setInterval(nextDestination, 2500);

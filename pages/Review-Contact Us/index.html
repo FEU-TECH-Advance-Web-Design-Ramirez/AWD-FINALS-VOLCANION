@@ -5,59 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volcanion.</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="./assets/img/logo.ico">
 </head>
 <body>
 
-    <div class="header">
-        <img src="./assets/img/logo.png" alt="Volcanion" class="logo">
-        <div class="choices">
+    <!-- Header Section -->
+    <header class="header">
+        <img src="./assets/img/logo.png" alt="Volcanion Logo" class="logo">
+        <nav class="choices">
             <a href="../../index.html" class="choice">Home</a>
             <a href="../Hidden Gem page/index.html" class="choice">Hidden Gems</a>
-            <a href="../about-me/index.html" class="choice">About Me.</a>
-        </div>
+            <a href="../about-me/index.html" class="choice">About Me</a>
+        </nav>
         <div class="hamburger" onclick="toggleMenu(event)">&#9776;</div>
-    </div>
-    <div class="menu" id="menu">
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav class="menu" id="menu">
         <a href="../../index.html">Home</a>
         <a href="./index.html">Send a Review</a>
         <a href="../Stories/index.html">Stories</a>
         <a href="./index.html">Contact Us</a>
-    </div>
+    </nav>
 
-    <div class="content">
-        <div class="review-section">
+    <!-- Main Content -->
+    <main class="content">
+        <!-- Review Section -->
+        <section class="review-section">
             <h2>Send a Review!</h2>
             <form>
-                <input type="text" placeholder="Food, Destination, Culture">
-                <input type="text" placeholder="Where to Find">
-                <input type="text" placeholder="Your Review">
-                <input type="text" placeholder="Stars">
+                <input type="text" placeholder="Food, Destination, Culture" required>
+                <input type="text" placeholder="Where to Find" required>
+                <input type="text" placeholder="Your Review" required>
+                <input type="number" placeholder="Stars (1-5)" min="1" max="5" required>
                 <input type="file" accept="image/*" multiple>
                 <button type="submit">Submit</button>
             </form>
-        </div>
+        </section>
 
-        <div class="contact-section">
+        <!-- Contact Section -->
+        <section class="contact-section">
             <h2>Contact Us!</h2>
-
             <div class="icons">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                <a href=""><i class="fa-brands fa-viber"></i></a>
-                <a href=""><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.facebook.com/jc.serrano.0126" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/Zaugustuss?fbclid=IwY2xjawJb4XZleHRuA2FlbQIxMAABHV36DUELLxabaC--OkOKAW4Kdgdrn6Dl1oGPjELWRlVTLlgwvT5dGqoy5Q_aem_mqr0sZo5Oa4hF0ah2yWG9A" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.viber.com/en/"><i class="fa-brands fa-viber"></i></a>
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiwyrj967yMAxW8zzgGHWTFAkYQFnoECAkQAQ&url=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&usg=AOvVaw1GRqnzaEzJ-JntPiR5Sc98&opi=89978449"><i class="fa-solid fa-envelope"></i></a>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
+    <!-- Footer Section -->
     <footer class="footer">
         <div class="copyright">&copy;|MMXXV|Volcanion.</div>
-        <img class="footer-logo-img" src="./assets/img/logo.png" alt="Logo">
+        <img class="footer-logo-img" src="./assets/img/logo.png" alt="Volcanion Logo">
         <div class="copyright">All Rights Reserved.</div>
     </footer>
 
-    <script src="./assets/js/srcipt.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Toggle menu
     const menu = document.getElementById("menu");
     const hamburger = document.querySelector(".hamburger");
 
@@ -16,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Destination auto-rotation
     const destinations = document.querySelectorAll(".destination");
     let currentIndex = 0;
 

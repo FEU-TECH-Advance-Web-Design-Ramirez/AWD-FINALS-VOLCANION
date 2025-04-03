@@ -1,27 +1,24 @@
+// Toggle the mobile menu visibility
 function toggleMenu(event) {
     const menu = document.getElementById("menu");
-    menu.classList.toggle("show");
-    
-    event.stopPropagation();
+    menu.classList.toggle("d-none");
+    event.stopPropagation(); // Prevents event from bubbling up
 }
 
+// Close the menu if clicked outside
 document.addEventListener("click", function(event) {
     const menu = document.getElementById("menu");
-    const hamburger = document.querySelector(".hamburger");
-
-    if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
-        menu.classList.remove("show");
+    if (!menu.contains(event.target) && event.target.tagName !== "BUTTON") {
+        menu.classList.add("d-none");
     }
 });
 
-
+// Carousel for Destination Sections
 let currentIndex = 0;
 const destinations = document.querySelectorAll(".destination");
 
 function showDestination(index) {
-    destinations.forEach((destination, i) => {
-        destination.classList.remove("active");
-    });
+    destinations.forEach(destination => destination.classList.remove("active"));
     destinations[index].classList.add("active");
 }
 

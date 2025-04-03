@@ -48,7 +48,7 @@ body {
 
 .menu {
 
-    display: none; /* Hidden by default; implement toggle logic in JavaScript */
+    display: none;
     position: absolute;
     background-color: #ffffff;
     width: 200px;
