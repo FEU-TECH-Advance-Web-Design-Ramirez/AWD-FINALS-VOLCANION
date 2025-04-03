@@ -1,4 +1,3 @@
-// Header //
 function toggleMenu(event) {
     const menu = document.getElementById("menu");
     menu.classList.toggle("show");
@@ -14,8 +13,6 @@ document.addEventListener("click", function(event) {
         menu.classList.remove("show");
     }
 });
-
-//
 
 
 let currentIndex = 0;
@@ -38,5 +35,4 @@ function prevDestination() {
     showDestination(currentIndex);
 }
 
-// Auto-rotate every 3 seconds
 setInterval(nextDestination, 2500);
