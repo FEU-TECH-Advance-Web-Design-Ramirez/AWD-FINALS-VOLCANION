@@ -98,26 +98,317 @@ Admin Verification: Ensuring content authenticity by approving food submissions 
 7. File Structure to follow below.
 
 ```
-WD-ProjectName
-└─ assets
-|   └─ css
-|   |   └─ style.css
-|   └─ img
-|   |   └─ fileWith.jpeg/.jpg/.webp/.png
-|   └─ js
-|       └─ script.js
-└─ pages
-|  └─ pageName
-|     └─ assets
-|     |  └─ css
-|     |  |  └─ style.css
-|     |  └─ img
-|     |  |  └─ fileWith.jpeg/.jpg/.webp/.png
-|     |  └─ js
-|     |     └─ script.js
-|     └─ index.html
-└─ index.html
-└─ readme.md
+AWD-FINALS-VOLCANION
+├── assets
+│   ├── css
+│   │   └── style.css
+│   ├── img
+│   │   ├── ao dai.jpg
+│   │   ├── barbajuan.jpg
+│   │   ├── bora.jpg
+│   │   ├── cebu.jpg
+│   │   ├── italy.jpg
+│   │   ├── japan.jpg
+│   │   ├── logo.ico
+│   │   ├── logo.png
+│   │   ├── map_vector.png
+│   │   ├── phiphi.jpg
+│   │   ├── spain.jpg
+│   │   ├── sushi.jpg
+│   │   └── thai.jpg
+│   └── js
+│       └── script.js
+├── pages
+│   ├── about-me
+│   │   ├── assets
+│   │   │   ├── css
+│   │   │   │   └── style.css
+│   │   │   ├── img
+│   │   │   │   ├── logo.ico
+│   │   │   │   ├── logo.png
+│   │   │   │   ├── traveller-1.jpg
+│   │   │   │   └── traveller-2.jpg
+│   │   │   └── js
+│   │   │       └── scripts.js
+│   │   └── index.html
+│   ├── Hidden Gem page
+│   │   ├── assets
+│   │   │   ├── css
+│   │   │   │   └── style.css
+│   │   │   ├── img
+│   │   │   │   ├── logo.ico
+│   │   │   │   └── logo.png
+│   │   │   └── js
+│   │   │       └── scripts.js
+│   │   └── index.html
+│   ├── Italy
+│   │   ├── assets
+│   │   │   ├── css
+│   │   │   │   └── style.css
+│   │   │   ├── img
+│   │   │   │   ├── Cuisine 1.jpg
+│   │   │   │   ├── Cuisine 2.jpg
+│   │   │   │   ├── Cuisine 3.jpg
+│   │   │   │   ├── Cuisine 4.jpg
+│   │   │   │   ├── Culture 1.jpg
+│   │   │   │   ├── Culture 2.jpg
+│   │   │   │   ├── Culture 3.jpg
+│   │   │   │   ├── Culture 4.jpg
+│   │   │   │   ├── Destination 1.jpg
+│   │   │   │   ├── Destination 2.jpg
+│   │   │   │   ├── Destination 3.jpg
+│   │   │   │   ├── Destination 4.jpg
+│   │   │   │   ├── Island.jpg
+│   │   │   │   ├── italy.jpg
+│   │   │   │   ├── Local Spotlights Culture 1.jpg
+│   │   │   │   ├── Local Spotlights Culture 2.jpg
+│   │   │   │   ├── Local Spotlights Destination 1.jpg
+│   │   │   │   ├── Local Spotlights Destination 2.jpg
+│   │   │   │   ├── Local Spotlights Food 1.jpg
+│   │   │   │   └── Local Spotlights Food 2.jpg
+│   │   │   │   ├── logo.ico
+│   │   │   │   ├── logo.png
+│   │   │   │   ├── Next Story Monaco.jpg
+│   │   │   │   └── Previous Story Thailand.jpg
+│   │   │   └── js
+│   │   │       └── script.js
+│   │   └── index.html
+│   ├── Japan
+│   │   ├── assets
+│   │   │   ├── css
+│   │   │   │   └── style.css
+│   │   │   ├── img
+│   │   │   │   ├── fishda.png
+│   │   │   │   ├── hokkaido.png
+│   │   │   │   ├── image.png
+│   │   │   │   ├── japan palce3.png
+│   │   │   │   ├── japancity.png
+│   │   │   │   ├── japancult1.png
+│   │   │   │   ├── japancult2.png
+│   │   │   │   ├── japancult3.png
+│   │   │   │   ├── japanfood1.png
+│   │   │   │   ├── japanfood2.png
+│   │   │   │   ├── japanheader.png
+│   │   │   │   ├── japanpalce2.png
+│   │   │   │   ├── japanplace1.png
+│   │   │   │   ├── logo.ico
+│   │   │   │   ├── logo.png
+│   │   │   │   ├── nextph.png
+│   │   │   │   ├── osaka.png
+│   │   │   │   ├── prespain.png
+│   │   │   │   ├── ramen.jpg
+│   │   │   │   ├── sumo.png
+│   │   │   │   ├── sushi.jpg
+│   │   │   │   └── tea ceremony.png
+│   │   │   │   └── tempura.jpg
+│   │   │   └── js
+│   │   │       └── script.js
+│   │   └── index.html
+│   ├── Monaco
+│   │   ├── assets
+│   │   │   ├── css
+│   │   │   │   └── style.css
+│   │   │   ├── img
+│   │   │   │   ├── Cuisine 1.jpg
+│   │   │   │   ├── Cuisine 2.jpg
+│   │   │   │   ├── Cuisine 3.jpg
+│   │   │   │   ├── Cuisine 4.jpg
+│   │   │   │   ├── Culture 1.jpg
+│   │   │   │   ├── Culture 2.jpg
+│   │   │   │   ├── Culture 3.jpg
+│   │   │   │   ├── Culture 4.jpg
+│   │   │   │   ├── Destination 1.jpg
+│   │   │   │   ├── Destination 2.jpg
+│   │   │   │   ├── Destination 3.jpg
+│   │   │   │   ├── Destination 4.jpg
+│   │   │   │   ├── Island.jpg
+│   │   │   │   ├── Local Spotlights Culture 1.jpg
+│   │   │   │   ├── Local Spotlights Culture 2.jpg
+│   │   │   │   ├── Local Spotlights Destination 1.jpg
+│   │   │   │   ├── Local Spotlights Destination 2.jpg
+│   │   │   │   ├── Local Spotlights Food 1.jpg
+│   │   │   │   ├── Local Spotlights Food 2.jpg
+│   │   │   │   ├── logo.ico
+│   │   │   │   ├── logo.png
+│   │   │   │   ├── Next Story Spain.jpg
+│   │   │   │   └── Previous Story Italy.jpg
+│   │   │   └── js
+│   │   │       └── script.js
+│   │   └── index.html
+│   ├── Philippines
+│   │   ├── assets
+│   │   │   ├── css
+│   │   │   │   └── style.css
+│   │   │   ├── img
+│   │   │   │   ├── adobo.png
+│   │   │   │   ├── bayanihan.png
+│   │   │   │   ├── bora.png
+│   │   │   │   ├── cebu.png
+│   │   │   │   ├── fiesta.png
+│   │   │   │   ├── fiesta2.png
+│   │   │   │   ├── halohalo.png
+│   │   │   │   ├── japanprev.png
+│   │   │   │   ├── logo.ico
+│   │   │   │   ├── logo.png
+│   │   │   │   ├── mano po.png
+│   │   │   │   ├── palawan.jpg
+│   │   │   │   ├── pancit.png
+│   │   │   │   ├── phcity.png
+│   │   │   │   ├── phcult1.png
+│   │   │   │   ├── phcult2.png
+│   │   │   │   ├── phfood1.png
+│   │   │   │   ├── phfood2.png
+│   │   │   │   ├── phheader.png
+│   │   │   │   ├── phvisit1.png
+│   │   │   │   ├── phvisit2.png
+│   │   │   │   ├── sinigang.png
+│   │   │   │   └── vietnamnext.png
+│   │   │   └── js
+│   │   │       └── script.js
+│   │   └── index.html
+│   ├── Review-Contact Us
+│   │   ├── assets
+│   │   │   ├── css
+│   │   │   │   └── style.css
+│   │   │   ├── img
+│   │   │   │   ├── logo.ico
+│   │   │   │   └── logo.png
+│   │   │   └── js
+│   │   │       └── srcipt.js
+│   │   └── index.html
+│   ├── Sign in page
+│   │   ├── assets
+│   │   │   ├── css
+│   │   │   │   └── style.css
+│   │   │   ├── img
+│   │   │   │   ├── logo.ico
+│   │   │   │   └── logo.png
+│   │   │   └── js
+│   │   │       └── script.js
+│   │   └── index.html
+│   ├── Sign up page
+│   │   ├── assets
+│   │   │   ├── css
+│   │   │   │   └── style.css
+│   │   │   ├── img
+│   │   │   │   ├── logo.ico
+│   │   │   │   └── logo.png
+│   │   │   └── js
+│   │   │       └── script.js
+│   │   └── index.html
+│   ├── Spain
+│   │   ├── assets
+│   │   │   ├── css
+│   │   │   │   └── style.css
+│   │   │   ├── img
+│   │   │   │   ├── Bg.jpg
+│   │   │   │   ├── Cuisine 1.jpg
+│   │   │   │   ├── Cuisine 2.jpg
+│   │   │   │   ├── Cuisine 3.jpg
+│   │   │   │   ├── Cuisine 4.jpg
+│   │   │   │   ├── Culture 1.jpg
+│   │   │   │   ├── Culture 2.jpg
+│   │   │   │   ├── Culture 3.jpg
+│   │   │   │   ├── Culture 4.jpg
+│   │   │   │   ├── Destination 1.jpg
+│   │   │   │   ├── Destination 2.jpg
+│   │   │   │   ├── Destination 3.jpg
+│   │   │   │   ├── Destination 4.jpg
+│   │   │   │   ├── Local Spotlights Culture 1.jpg
+│   │   │   │   ├── Local Spotlights Culture 2.jpg
+│   │   │   │   ├── Local Spotlights Destination 1.jpg
+│   │   │   │   ├── Local Spotlights Destination 2.jpg
+│   │   │   │   ├── Local Spotlights Food 1.jpg
+│   │   │   │   ├── Local Spotlights Food 2.jpg
+│   │   │   │   ├── logo.ico
+│   │   │   │   ├── logo.png
+│   │   │   │   ├── Next Story Japan.jpg
+│   │   │   │   └── Previous Story Monaco.jpg
+│   │   │   └── js
+│   │   │       └── script.js
+│   │   └── index.html
+│   ├── Stories
+│   │   ├── assets
+│   │   │   ├── css
+│   │   │   │   └── style.css
+│   │   │   ├── img
+│   │   │   │   ├── italy.jpg
+│   │   │   │   ├── japan.jpg
+│   │   │   │   ├── logo.ico
+│   │   │   │   ├── logo.png
+│   │   │   │   ├── monaco.jpg
+│   │   │   │   ├── ph.jpg
+│   │   │   │   ├── spain.jpg
+│   │   │   │   ├── thailand.jpg
+│   │   │   │   └── vietnam.jpg
+│   │   │   └── js
+│   │   │       └── scripts.js
+│   │   └── index.html
+│   ├── Thailand
+│   │   ├── assets
+│   │   │   ├── css
+│   │   │   │   └── style.css
+│   │   │   ├── img
+│   │   │   │   ├── bow.png
+│   │   │   │   ├── buddhism.png
+│   │   │   │   ├── chix.png
+│   │   │   │   ├── cult1.png
+│   │   │   │   ├── cult2.png
+│   │   │   │   ├── food1.png
+│   │   │   │   ├── food2.png
+│   │   │   │   ├── gulay.png
+│   │   │   │   ├── image 88.png
+│   │   │   │   ├── logo.ico
+│   │   │   │   ├── logo.png
+│   │   │   │   ├── mango.png
+│   │   │   │   ├── munggo.png
+│   │   │   │   ├── placertovisit2.png
+│   │   │   │   ├── placetovisit1.png
+│   │   │   │   ├── tadjakan.png
+│   │   │   │   ├── Thai.png
+│   │   │   │   ├── thaiheader.png
+│   │   │   │   ├── thaiplace1.png
+│   │   │   │   ├── thaiplace2.png
+│   │   │   │   ├── thaiplace4.png
+│   │   │   │   ├── thaiplce3.png
+│   │   │   │   └── waterelephant.png
+│   │   │   └── js
+│   │   │       └── script.js
+│   │   └── index.html
+│   └── Vietnam
+│       ├── assets
+│       │   ├── css
+│       │   │   └── style.css
+│       │   ├── img
+│       │   │   ├── airballons.png
+│       │   │   ├── burger.png
+│       │   │   ├── burger2.png
+│       │   │   ├── food1.png
+│       │   │   ├── food2.png
+│       │   │   ├── kopi.png
+│       │   │   ├── logo.ico
+│       │   │   ├── logo.png
+│       │   │   ├── mganetay.png
+│       │   │   ├── nextthai.png
+│       │   │   ├── place1.png
+│       │   │   ├── place2.png
+│       │   │   ├── place3.png
+│       │   │   ├── place4.png
+│       │   │   ├── prevph.png
+│       │   │   ├── soup.png
+│       │   │   ├── vietcult1.png
+│       │   │   ├── vietcult2.png
+│       │   │   ├── vietheader.png
+│       │   │   ├── vietvisit1.png
+│       │   │   ├── vietvisit2.png
+│       │   │   ├── waterpuppet.png
+│       │   │   └── waterpuppet2.png
+│       │   └── js
+│       │       └── script.js
+│       │   └── index.html
+├── index.html
+└── LICENSE
+└── readme.md
 ```
 
 ## Resources
