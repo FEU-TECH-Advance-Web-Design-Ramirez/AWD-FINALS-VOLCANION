@@ -6,6 +6,7 @@
     <title>Volcanion</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="./assets/img/logo.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.8.3/axios.min.js"></script>
 </head>
 <body>
 
@@ -28,19 +29,19 @@
 
     <main class="sign-up-section">
         <h1>Sign Up</h1>
-        <form class="sign-up-form">
+        <form id ="sign-up-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
 
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
 
-            <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" name="fullname" required>
-
             <button type="submit">Sign Up</button>
 
-            <p class="sign-in-link">Already have an account? <a href="../Sign in page/index.html">Sign In</a></p>
+            <p class="sign-up-link">Have Account? <a href="../Sign in page/index.html">Sign In</a></p>
         </form>
     </main>
 

@@ -178,9 +178,9 @@ body {
     justify-content: center;
     gap: 20px;
     margin-top: 70px;
-    flex-wrap: wrap; /* Allow icons to wrap if needed */
-    max-width: 100%; /* Ensure it stays inside */
-    overflow: hidden; /* Prevent elements from going outside */
+    flex-wrap: wrap;
+    max-width: 100%;
+    overflow: hidden;
 }
 .contact-section .icons a {
     display: flex;
@@ -189,7 +189,7 @@ body {
     text-decoration: none;
 }
 .contact-section i {
-    font-size: clamp(30px, 6vw, 65px); /* Responsive icon size */
+    font-size: clamp(30px, 6vw, 65px);
     color: #000000;
     transition: opacity 0.3s;
 }

@@ -6,6 +6,8 @@
     <title>Volcanion</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="./assets/img/logo.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.8.3/axios.min.js"></script>
+
 </head>
 <body>
 
@@ -15,6 +17,7 @@
             <a href="./index.html" class="choice">Home</a>
             <a href="./pages/Hidden Gem page/index.html" class="choice">Hidden Gems</a>
             <a href="https://example.com/choice3" class="choice">About Me</a>
+            
         </nav>
         <div class="hamburger" onclick="toggleMenu(event)">&#9776;</div>
     </header>
@@ -28,12 +31,11 @@
 
     <main class="sign-in-section">
         <h1>Volcanion</h1>
-        <form class="sign-in-form">
+        <form id ="sign-in-form">
+            
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
 
             <button type="submit">Sign In</button>
 

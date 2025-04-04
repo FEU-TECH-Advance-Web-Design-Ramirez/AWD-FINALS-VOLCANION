@@ -1,6 +1,7 @@
 function toggleMenu(event) {
     const menu = document.getElementById("menu");
     menu.classList.toggle("show");
+    
     event.stopPropagation();
 }
 
@@ -13,22 +14,31 @@ document.addEventListener("click", function(event) {
     }
 });
 
-let currentIndex = 0;
-const destinations = document.querySelectorAll(".destination");
 
-function showDestination(index) {
-    destinations.forEach(destination => destination.classList.remove("active"));
-    destinations[index].classList.add("active");
-}
 
-function nextDestination() {
-    currentIndex = (currentIndex + 1) % destinations.length;
-    showDestination(currentIndex);
-}
 
-function prevDestination() {
-    currentIndex = (currentIndex - 1 + destinations.length) % destinations.length;
-    showDestination(currentIndex);
-}
 
-setInterval(nextDestination, 2500);
+
+
+
+
+
+document.getElementById("sign-in-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+    const API_URL = "https://demo-api-skills.vercel.app/api/FoodieTraveler/users/login/"
+
+    const email = document.getElementById("email").value;
+
+    axios.get(API_URL+email)
+        .then((response) => {
+            const user = response.data;
+            if (user.email == email) {
+                alert("Login Success");
+            }
+            
+            // localStorage.setItem("userId")
+        })
+        .catch((err) => {
+            alert("Failed to login")
+        })
+})
