@@ -21,7 +21,6 @@ Foodie Traveler is your ultimate companion for discovering the best culinary exp
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
 
 [![wakatime](https://wakatime.com/badge/user/018efa0c-68f3-42b9-8dc0-b06b516e8ade/project/71c24f15-c990-466e-9089-0c034e1293de.svg)](https://wakatime.com/badge/user/018efa0c-68f3-42b9-8dc0-b06b516e8ade/project/71c24f15-c990-466e-9089-0c034e1293de)
 
@@ -65,7 +64,7 @@ Description of the project in details.
 Guiding Question:
 - Foodie Traveler is a mobile and web application designed for food enthusiasts and travelers to discover, review, and share culinary experiences from around the world. The platform allows users to explore curated restaurant recommendations, submit personal reviews, and engage with a like-minded community.
 - The purpose of Foodie Traveler is to help users find and share the best food experiences by combining restaurant discovery with travel planning. It aims to create a vibrant community of food lovers who contribute authentic reviews, highlight hidden culinary gems, and receive personalized recommendations.
-- 
+
 User Authentication: Secure login and registration.
 
 Food Submission & Reviews: Users can submit dishes, add restaurant locations, rate meals, and share personal reviews.
@@ -416,5 +415,10 @@ AWD-FINALS-VOLCANION
 
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
-|-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Figma | for website design purposes | https://www.figma.com |
+| Pinterest | for website design purposes | https://www.pinterest.com/ |
+| Youtube | for website design and development purposes | https://www.youtube.com/ |
+| Chat gpt| for enhancement and learning purposes| https://chatgpt.com/ |
+| Github | for collaborative purposes | https://www.figma.com |
+
+
