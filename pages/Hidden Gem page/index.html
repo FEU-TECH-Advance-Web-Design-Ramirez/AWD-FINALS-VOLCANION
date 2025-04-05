@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Gems Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.ico">
+</head>
+<body>
+    <div class="header">
+        <img src="./assets/img/logo.png" alt="Volcanion" class="logo">
+        <div class="choices">
+            <a href="../../index.html" class="choice">Home</a>
+            <a href="./index.html" class="choice">Hidden Gems</a>
+            <a href="../about-me/index.html" class="choice">About Me.</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu(event)">&#9776;</div>
+    </div>
+    
+    <div class="menu" id="menu">
+        <a href="../../index.html">Home</a>
+        <a href="../Review-Contact Us/index.html">Send a Review</a>
+        <a href="../Stories/index.html">Stories</a>
+        <a href="../Review-Contact Us/index.html">Contact Us</a>
+    </div>
+
+    <div class="content">
+        <h1>Explore Hidden Gems Around the World</h1>
+        <div id="map"></div>
+    </div>
+    
+
+    <footer class="footer">
+        <div class="copyright">&copy;|MMXXV|Volcanion.</div>
+        <img class="footer-logo-img" src="./assets/img/logo.png" alt="Logo">
+        <div class="copyright">All Rights Reserved.</div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italy</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.ico">
+</head>
+<body>
+    <div class="header">
+        <img src="./assets/img/logo.png" alt="Volcanion" class="logo">
+        <div class="choices">
+            <a href="../../index.html" class="choice">Home</a>
+            <a href="../Hidden Gem page/index.html" class="choice">Hidden Gems</a>
+            <a href="../about-me/index.html" class="choice">About Me.</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu(event)">&#9776;</div>
+    </div>
+
+    <div class="menu" id="menu">
+        <a href="../../index.html">Home</a>
+        <a href="../Review-Contact Us/index.html">Send a Review</a>
+        <a href="../Stories/index.html">Stories</a>
+        <a href="../Review-Contact Us/index.html">Contact Us</a>
+    </div>
+
+    <div class="cont-1">
+        <h1>Experience Italy: A Journey Through Food, <br>Culture, and Must-Visit Destinations</h1>
+    </div>
+
+    <div class="cuisine">
+        <div class="cuisine-title">Italian Cuisine: A Taste of Tradition and Innovation</div>
+        <p class="cuisine-description">
+            Italian cuisine blends timeless tradition with modern creativity, making it one of the world's most beloved culinary experiences. Rooted in regional diversity, it goes beyond pasta and pizza, reflecting a deep connection to culture and quality ingredients.
+            <br><br>
+            Italian food emphasizes simplicity and fresh, high-quality ingredients. Each region has its specialties: Northern Italy offers creamy risottos and rich meats, while Southern Italy favors bold tomato-based dishes and seafood. Classics like Pasta Carbonara, Osso Buco, and Margherita Pizza showcase this rich heritage. Meals are central to family traditions, passed down through generations and enjoyed at a leisurely pace.
+            <br><br>
+            While tradition prevails, Italian cuisine evolves with contemporary influences. Chefs experiment with truffle-infused pasta, gourmet pizzas, and plant-based adaptations like zucchini noodles and dairy-free gelato. Modern techniques, including molecular gastronomy, add artistic flair to Italian dishes.
+        </p>
+        <img class="cuisine-image" src="./assets/img/Cuisine 2.jpg" />
+        <img class="cuisine-image" src="./assets/img/Cuisine 1.jpg" />
+        <img class="cuisine-image" src="./assets/img/Cuisine 3.jpg" />
+        <img class="cuisine-large-image" src="./assets/img/Cuisine 4.jpg" />
+    </div>
+
+    <div class="destination">
+        <div class="destination-title">Timeless Italy: A Land of History and Charm</div>
+        <p class="destination-description">
+            Italy is a country where ancient heritage and modern vibrancy blend seamlessly. From Rome’s historic Colosseum and Vatican City to Milan’s high-fashion streets and Venice’s romantic canals, every destination tells a story of art, culture, and elegance. Whether admiring the rolling hills of Tuscany or experiencing the coastal beauty of Amalfi, Italy enchants travelers with its diverse landscapes and rich traditions.
+            <br><br>
+            Deeply rooted in history, Italy preserves its legacy through Renaissance masterpieces, grand cathedrals, and time-honored traditions like pasta-making and wine production. Cities like Florence and Naples offer glimpses into Italy’s artistic and culinary excellence, where centuries-old craftsmanship continues to thrive.
+            <br><br>
+            At the same time, Italy embraces modernity with cutting-edge design, luxury fashion, and Michelin-starred cuisine. Milan stands at the forefront of global innovation, while cities like Bologna and Turin lead in technology and automotive excellence. Whether seeking history, gastronomy, or contemporary elegance, Italy offers an unforgettable journey through time and taste.
+        </p>
+        <img class="destination-large-image" src="./assets/img/Destination 1.jpg" />
+        <img class="destination-image" src="./assets/img/Destination 2.jpg" />
+        <img class="destination-image" src="./assets/img/Destination 3.jpg" />
+        <img class="destination-image" src="./assets/img/Destination 4.jpg" />
+    </div>
+
+    <div class="culture">
+        <div class="culture-title">Timeless Italy: A Land of History and Charm</div>
+        <p class="culture-description">
+            Italy is a country where ancient heritage and modern vibrancy blend seamlessly. From Rome’s historic Colosseum and Vatican City to Milan’s high-fashion streets and Venice’s romantic canals, every destination tells a story of art, culture, and elegance. Whether admiring the rolling hills of Tuscany or experiencing the coastal beauty of Amalfi, Italy enchants travelers with its diverse landscapes and rich traditions.
+            <br><br>
+            Deeply rooted in history, Italy preserves its legacy through Renaissance masterpieces, grand cathedrals, and time-honored traditions like pasta-making and wine production. Cities like Florence and Naples offer glimpses into Italy’s artistic and culinary excellence, where centuries-old craftsmanship continues to thrive.
+            <br><br>
+            At the same time, Italy embraces modernity with cutting-edge design, luxury fashion, and Michelin-starred cuisine. Milan stands at the forefront of global innovation, while cities like Bologna and Turin lead in technology and automotive excellence. Whether seeking history, gastronomy, or contemporary elegance, Italy offers an unforgettable journey through time and taste.
+        </p>
+        <img class="culture-image" src="./assets/img/Culture 1.jpg" />
+        <img class="culture-image" src="./assets/img/Culture 3.jpg" />
+        <img class="culture-image" src="./assets/img/Culture 4.jpg" />
+        <img class="culture-large-image" src="./assets/img/Culture 2.jpg" />
+    </div>
+
+    <div class="local-spotlights">
+        <h2>Local Spotlights</h2>
+        <div class="local-spotlights-buttons">
+            <button onclick="filterSelection(this, 'all')" class="active">All</button>
+            <button onclick="filterSelection(this, 'food')">Cuisines</button>
+            <button onclick="filterSelection(this, 'destination')">Destinations</button>
+            <button onclick="filterSelection(this, 'culture')">Cultures</button>
+        </div>
+        <div class="local-spotlights-container">
+            <div class="card food show">
+                <img src="./assets/img/Local Spotlights Food 1.jpg" alt="Gelato">
+                <h3>Gelato</h3>
+                <p>Italian ice cream, or gelato, is a rich and creamy frozen dessert made with milk, sugar, and natural flavorings. 
+                    Unlike traditional ice cream, gelato has less air, making it denser and more flavorful. </p>
+            </div>
+            <div class="card destination show">
+                <img src="./assets/img/Local Spotlights Destination 1.jpg" alt="Ponte Vecchio">
+                <h3>Ponte Vecchio</h3>
+                <p>The Ponte Vecchio is a historic medieval bridge in Florence, Italy, spanning the Arno River. Famous for its unique design, it is lined with shops, mainly jewelers and art dealers. 
+                    Built in 1345, it is the oldest bridge in Florence and survived World War II.</p>
+            </div>
+            <div class="card culture show">
+                <img src="./assets/img/Local Spotlights Culture 1.jpg" alt="Carnival of Viareggio ">
+                <h3>Carnival of Viareggio </h3>
+                <p>The Carnival of Viareggio is one of Italy’s most famous and spectacular carnivals, 
+                    held annually in the coastal city of Viareggio, Tuscany. Dating back to 1873, it is known for 
+                    its massive, artistic papier-mâché floats that satirize politics, celebrities, and current events. 
+                    The event features parades, masked balls, concerts, and fireworks, attracting visitors from around the world.</p>
+            </div>
+            <div class="card food show">
+                <img src="./assets/img/Local Spotlights Food 2.jpg" alt="Creamy Garlic Butter Salmon Pasta">
+                <h3>Creamy Garlic Butter Salmon Pasta</h3>
+                <p>Creamy Garlic Butter Salmon Pasta is a rich and flavorful dish featuring tender salmon fillets cooked in a 
+                    garlic butter sauce, then tossed with pasta in a creamy, Parmesan-infused sauce. The dish combines the smoky, 
+                    buttery taste of seared salmon with the smooth, velvety texture of the sauce, often enhanced with fresh herbs 
+                    like parsley or dill.</p>
+            </div>
+            <div class="card destination show">
+                <img src="./assets/img/Local Spotlights Destination 2.jpg" alt="Basilica Santa Maria della Salute">
+                <h3>Basilica Santa Maria della Salute</h3>
+                <p>The Basilica di Santa Maria della Salute is a stunning Baroque church in Venice, Italy, located at the entrance 
+                    of the Grand Canal. Built in the 17th century as a votive offering to the Virgin Mary for delivering the city 
+                    from the plague, the basilica features an iconic domed structure and intricate interior decorations.</p>
+            </div>
+            <div class="card culture show">
+                <img src="./assets/img/Local Spotlights Culture 2.jpg" alt="Venice Carnival">
+                <h3>Venice Carnival</h3>
+                <p>The Venice Carnival is a world-famous festival held annually in Venice, Italy, known for its elaborate masks, 
+                    grand costumes, and festive atmosphere. Dating back to the 12th century, it traditionally marks 
+                    the period before Lent. The celebration includes masked balls, street performances, parades, and cultural events, 
+                    creating a magical and mysterious ambiance throughout the city.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="story-navigation1">
+        <a href="../Thailand/index.html" class="previous-story1">
+            <i class="fas fa-arrow-left" aria-hidden="true"></i>
+            <p>Experience Thailand: Food, Culture, and Must-Visit Places </p>
+            <span>Previous Story</span>
+            <img src="./assets/img/Previous Story Thailand.jpg" alt="Previous Story Image" class="story-image1">
+        </a>
+        <a href="../Monaco/index.html" class="next-story1">
+            <img src="./assets/img/Next Story Monaco.jpg" alt="Next Story Image" class="story-image1">
+            <span>Next Story</span>
+            <p>Experience Monaco: A Journey Through Luxury, Culture, and Must-Visit Destinations</p>
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <footer class="footer">
+        <div class="copyright">&copy;|MMXXV|Volcanion.</div>
+        <img class="footer-logo-img" src="./assets/img/logo.png" alt="Logo">
+        <div class="copyright">All Rights Reserved.</div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
