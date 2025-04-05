@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodie Traveler</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+</head>
+<body>
+
+    <div class="header d-flex justify-content-between align-items-center p-2">
+        <img src="./img/logo.ico" alt="Volcanion" class="logo">
+        <div class="choices d-flex gap-3">
+            <a href="/index.html" class="choice">Home</a>
+            <a href="../Hidden Gem page/index.html" class="choice">Hidden Gems</a>
+            <a href="../about-me/index.html" class="choice">About Me.</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu(event)">&#9776;</div>
+    </div>
+
+    <div class="menu" id="menu">
+        <a href="/index.html">Home</a>
+        <a href="./index.html">Send a Review</a>
+        <a href="../Stories/index.html">Stories</a>
+        <a href="../Review-Contact Us/index.html">Contact Us</a>
+        <a href="../admin-mode/index.html">Admin </a>
+    </div>
+<body>
+
+  <div id="auth" style="display: block;">
+    <h2>Login</h2>
+    <form id="login-form">
+      <label for="loginEmail">Email:</label>
+      <input type="email" id="loginEmail" required><br>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <button id="show-signup">Sign Up</button></p>
+  </div>
+
+  <div id="signup" style="display: none;">
+    <h2>Sign Up</h2>
+    <form id="sign-up-form">
+      <label for="signupName">Name:</label>
+      <input type="text" id="signupName" required><br>
+
+      <label for="signupEmail">Email:</label>
+      <input type="email" id="signupEmail" required><br>
+
+      <label for="signupPassword">Password:</label>
+      <input type="password" id="signupPassword" required><br>
+
+      <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <button id="show-login">Login</button></p>
+  </div>
+
+  <div id="dashboard" style="display: none;">
+    <h2>Welcome, <span id="username"></span></h2>
+    <button id="logout">Logout</button>
+
+    <h3>Your Reviews</h3>
+    <div id="reviews"></div>
+
+    <h3>Submit a Review & Rating</h3>
+    <form id="review-form">
+      <label for="foodId">Food ID:</label>
+      <input type="text" id="foodId" required><br>
+
+      <label for="rating">Rating (1-5):</label>
+      <input type="number" id="rating" min="1" max="5" required><br>
+
+      <label for="comment">Comment:</label>
+      <textarea id="comment" required></textarea><br>
+
+      <button type="submit">Submit Review</button>
+    </form>
+  </div>
+  <footer class="footer d-flex justify-content-between align-items-center p-2">
+    <div class="copyright">&copy;|MMXXV|Volcanion.</div>
+    <img class="footer-logo-img" src="./img/logo.ico" alt="Logo">
+    <div class="copyright">All Rights Reserved.</div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
