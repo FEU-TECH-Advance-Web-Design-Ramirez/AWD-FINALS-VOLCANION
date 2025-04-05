@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Mode</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.8.3/axios.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="./assets/img/logo.ico">
+
+</head>
+<body>
+    <div class="header d-flex justify-content-between align-items-center p-2">
+        <img src="./assets/img/logo.png" alt="Volcanion" class="logo">
+        <div class="choices d-flex gap-3">
+            <a href="../../index.html" class="choice">Home</a>
+            <a href="../Hidden Gem page/index.html" class="choice">Hidden Gems</a>
+            <a href="../about-me/index.html" class="choice">About Me.</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu(event)">&#9776;</div>
+    </div>
+    
+    <div class="menu" id="menu">
+        <a href="../admin-mode/index.html">Home</a>
+        <a href="../Sign-in_Sign-up-Review">Send a Review</a>
+        <a href="../Stories/index.html">Stories</a>
+        <a href="../Review-Contact Us/index.html">Contact Us</a>
+    </div>
+
+
+    <div id="loginPage" class="h-screen flex items-center justify-center">
+        <div class="bg-white p-6 rounded shadow-md w-80">
+          <h2 class="text-xl font-bold mb-4 text-center">Admin</h2>
+          <input type="text" id="username" placeholder="Username" class="w-full p-2 border border-gray-300 rounded mb-2" />
+          <input type="password" id="password" placeholder="Password" class="w-full p-2 border border-gray-300 rounded mb-4" />
+          <button onclick="login()" class="w-full bg-gray-300 text-black p-2 rounded hover:bg-gray-400">Login</button>
+          <p id="loginError" class="text-red-500 mt-2 hidden">Invalid credentials</p>
+        </div>
+      </div>
+    
+      <!-- Admin Dashboard -->
+      <div id="dashboard" class="p-6 hidden">
+        <div class="flex justify-between items-center mb-4">
+          <h1 class="text-2xl font-bold">Admin Dashboard</h1>
+          <button onclick="logout()" class="bg-red-500 text-white px-4 py-2 rounded">Logout</button>
+        </div>
+        <div>
+          <h2 class="text-xl font-semibold mb-2">Users</h2>
+          <div id="userList" class="space-y-2"></div>
+        </div>
+      </div>
+    
+      <!-- Edit User Modal -->
+      <div id="userFormModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white p-6 rounded shadow-md w-96">
+          <h2 id="formTitle" class="text-xl font-bold mb-4">Edit User</h2>
+          <input type="text" id="formName" placeholder="Name" class="w-full p-2 border border-gray-300 rounded mb-2" />
+          <input type="email" id="formEmail" placeholder="Email" class="w-full p-2 border border-gray-300 rounded mb-2" />
+          <div class="flex justify-end gap-2">
+            <button onclick="hideUserForm()" class="px-4 py-2 border border-gray-300 rounded">Cancel</button>
+            <button onclick="submitUserForm()" class="bg-gray-300 text-black px-4 py-2 rounded hover:bg-gray-400">Submit</button>
+          </div>
+        </div>
+      </div>
+
+  <footer class="footer d-flex justify-content-between align-items-center p-2">
+    <div class="copyright">&copy;|MMXXV|Volcanion.</div>
+    <img class="footer-logo-img" src="./assets/img/logo.png" alt="Logo">
+    <div class="copyright">All Rights Reserved.</div>
+</footer>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
